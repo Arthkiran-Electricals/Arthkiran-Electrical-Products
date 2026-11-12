@@ -1,0 +1,1388 @@
+
+/* =========================================================
+   ARTHKIRAN ELECTRICAL PRODUCTS
+   PRODUCTS PAGE — COMPLETE STYLESHEET
+
+   Shared header, footer and navigation styles are inherited
+   from the existing ../style.css file.
+========================================================= */
+
+/* ---------------------------------------------------------
+   1. PAGE FOUNDATION
+--------------------------------------------------------- */
+
+.products-page {
+    padding-top: 88px;
+    color: var(--text, #292727);
+    background: var(--white, #ffffff);
+}
+
+.products-shell {
+    width: min(calc(100% - 80px), var(--container, 1240px));
+    margin-inline: auto;
+}
+
+.products-page a {
+    text-decoration: none;
+}
+
+.products-page button,
+.products-page input {
+    font: inherit;
+}
+
+.products-page button {
+    cursor: pointer;
+}
+
+.products-page img {
+    max-width: 100%;
+}
+
+.sr-only {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+
+/* ---------------------------------------------------------
+   2. HERO BANNER
+--------------------------------------------------------- */
+
+.products-hero {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    color: #ffffff;
+
+    background:
+        radial-gradient(
+            circle at 79% 45%,
+            rgba(201, 164, 92, 0.16),
+            transparent 29%
+        ),
+        linear-gradient(
+            118deg,
+            #220606 0%,
+            #300909 52%,
+            #4b1010 100%
+        );
+}
+
+.products-hero-pattern {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    opacity: 0.18;
+
+    background-image:
+        linear-gradient(
+            rgba(226, 200, 137, 0.16) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(226, 200, 137, 0.16) 1px,
+            transparent 1px
+        );
+
+    background-size: 74px 74px;
+
+    mask-image: linear-gradient(
+        90deg,
+        transparent,
+        #000000 45%,
+        #000000
+    );
+}
+
+.products-hero-inner {
+    min-height: 500px;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
+
+    align-items: center;
+    gap: 30px;
+
+    padding-block: 64px 76px;
+}
+
+.products-hero-copy {
+    max-width: 690px;
+}
+
+
+/* Breadcrumb */
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 42px;
+
+    color: rgba(255, 255, 255, 0.56);
+    font-size: 12px;
+}
+
+.breadcrumb a {
+    color: #e2c889;
+    transition: color 0.2s ease;
+}
+
+.breadcrumb a:hover {
+    color: #ffffff;
+}
+
+.breadcrumb span:last-child {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* Hero heading and copy */
+
+.products-eyebrow {
+    display: inline-block;
+    margin-bottom: 18px;
+
+    color: #e2c889;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.products-hero h1 {
+    max-width: 700px;
+    margin: 0 0 22px;
+
+    color: #ffffff;
+
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(44px, 5.2vw, 72px);
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: -1.3px;
+}
+
+.products-hero h1 em {
+    color: #e2c889;
+    font-weight: 500;
+}
+
+.products-hero-copy > p {
+    max-width: 560px;
+    margin: 0 0 29px;
+
+    color: rgba(255, 255, 255, 0.73);
+
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+
+/* Explore link */
+
+.products-hero-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 13px;
+
+    padding-bottom: 8px;
+
+    color: #ffffff;
+    border-bottom: 1px solid rgba(226, 200, 137, 0.7);
+
+    font-size: 13px;
+    font-weight: 700;
+
+    transition:
+        gap 0.25s ease,
+        color 0.25s ease;
+}
+
+.products-hero-link span {
+    color: #e2c889;
+    font-size: 18px;
+}
+
+.products-hero-link:hover {
+    gap: 20px;
+    color: #e2c889;
+}
+
+
+/* ---------------------------------------------------------
+   3. HERO LOGO ARTWORK
+--------------------------------------------------------- */
+
+.products-hero-art {
+    position: relative;
+    isolation: isolate;
+
+    min-height: 350px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.art-ring {
+    position: absolute;
+    z-index: -1;
+
+    width: min(32vw, 400px);
+    aspect-ratio: 1;
+
+    border: 1px solid rgba(226, 200, 137, 0.45);
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.art-ring-one {
+    transform: rotate(-24deg) scaleX(0.77);
+}
+
+.art-ring-two {
+    width: min(36vw, 440px);
+
+    border-color: rgba(226, 200, 137, 0.2);
+
+    transform: rotate(32deg) scaleX(0.77);
+}
+
+.art-gold-line {
+    position: absolute;
+    z-index: -1;
+
+    width: min(32vw, 390px);
+    height: 1px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #c9a45c,
+        transparent
+    );
+
+    transform: rotate(-34deg);
+    pointer-events: none;
+}
+
+
+/* Logo frame */
+
+.hero-logo-frame {
+    position: relative;
+    z-index: 2;
+
+    width: clamp(190px, 25vw, 310px);
+    aspect-ratio: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    border: 1px solid rgba(226, 200, 137, 0.5);
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.09),
+        rgba(255, 255, 255, 0.015) 68%,
+        transparent 70%
+    );
+
+    box-shadow:
+        0 0 0 12px rgba(201, 164, 92, 0.035),
+        0 0 70px rgba(201, 164, 92, 0.12);
+}
+
+.hero-company-logo {
+    display: block;
+
+    width: 100%;
+    max-width: 245px;
+    max-height: 225px;
+
+    object-fit: contain;
+
+    filter: drop-shadow(
+        0 8px 18px rgba(0, 0, 0, 0.18)
+    );
+}
+
+
+/* Tagline below the logo */
+
+.art-caption {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+
+    color: #e2c889;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+/* Hero bottom strip */
+
+.products-hero-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    padding: 16px 20px;
+
+    color: rgba(255, 255, 255, 0.58);
+    background: rgba(0, 0, 0, 0.13);
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+}
+
+.products-hero-bottom i {
+    width: 4px;
+    height: 4px;
+
+    border-radius: 50%;
+    background: #c9a45c;
+}
+
+
+/* ---------------------------------------------------------
+   4. CATALOGUE INTRODUCTION
+--------------------------------------------------------- */
+
+.catalog-intro {
+    padding: 90px 0 48px;
+    background: var(--cream, #f7f4ee);
+}
+
+.catalog-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+
+    align-items: end;
+    gap: 60px;
+}
+
+.catalog-intro .section-kicker {
+    display: inline-block;
+    margin-bottom: 14px;
+}
+
+.catalog-intro h2 {
+    margin: 0;
+
+    color: var(--maroon-dark, #300909);
+
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(36px, 4.3vw, 54px);
+    font-weight: 600;
+    line-height: 1.12;
+}
+
+.catalog-intro h2 span {
+    color: #8a7770;
+    font-weight: 500;
+}
+
+.catalog-intro-grid > p {
+    max-width: 510px;
+    margin: 0 0 5px;
+
+    color: var(--text-soft, #69615d);
+
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+
+/* ---------------------------------------------------------
+   5. FILTERS AND SEARCH
+--------------------------------------------------------- */
+
+.catalog-section {
+    padding: 36px 0 100px;
+    background: var(--cream, #f7f4ee);
+}
+
+.catalog-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+
+    margin-bottom: 28px;
+}
+
+.catalog-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.catalog-tab {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    min-height: 42px;
+    padding: 0 17px;
+
+    border: 1px solid rgba(75, 16, 16, 0.14);
+    border-radius: 50px;
+
+    color: var(--text-soft, #69615d);
+    background: transparent;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.catalog-tab:hover {
+    border-color: #4b1010;
+    color: #4b1010;
+}
+
+.catalog-tab.is-active {
+    color: #ffffff;
+    background: #4b1010;
+    border-color: #4b1010;
+}
+
+.catalog-tab span {
+    display: inline-grid;
+    place-items: center;
+
+    min-width: 20px;
+    height: 20px;
+    padding-inline: 5px;
+
+    border-radius: 50px;
+
+    color: #300909;
+    background: #e2c889;
+
+    font-size: 10px;
+}
+
+
+/* Search field */
+
+.catalog-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    width: min(100%, 270px);
+    min-height: 44px;
+    padding: 0 14px;
+
+    border: 1px solid rgba(75, 16, 16, 0.14);
+    border-radius: 50px;
+
+    background: rgba(255, 255, 255, 0.8);
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.catalog-search svg {
+    width: 17px;
+    height: 17px;
+    flex: 0 0 auto;
+
+    fill: none;
+    stroke: #4b1010;
+    stroke-width: 1.7;
+}
+
+.catalog-search input {
+    width: 100%;
+    min-width: 0;
+    padding: 0;
+
+    outline: none;
+    border: 0;
+
+    color: var(--text, #292727);
+    background: transparent;
+
+    font-size: 12px;
+}
+
+.catalog-search input::placeholder {
+    color: #8e8884;
+}
+
+.catalog-search:focus-within {
+    border-color: #c9a45c;
+    box-shadow: 0 0 0 3px rgba(201, 164, 92, 0.15);
+}
+
+
+/* ---------------------------------------------------------
+   6. PREMIUM PRODUCT CARD GRID
+--------------------------------------------------------- */
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    align-items: stretch;
+    gap: 26px;
+}
+
+.catalog-card {
+    position: relative;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(75, 16, 16, 0.1);
+    border-radius: 5px;
+
+    background: #ffffff;
+
+    box-shadow: 0 8px 30px rgba(48, 9, 9, 0.055);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+/* Gold line appears on hover */
+
+.catalog-card::before {
+    content: "";
+
+    position: absolute;
+    z-index: 3;
+    inset: 0 0 auto;
+
+    height: 3px;
+
+    background: linear-gradient(
+        90deg,
+        #4b1010,
+        #c9a45c,
+        #e2c889
+    );
+
+    transform: scaleX(0);
+    transform-origin: left;
+
+    transition: transform 0.4s ease;
+}
+
+.catalog-card:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(201, 164, 92, 0.65);
+
+    box-shadow: 0 22px 48px rgba(48, 9, 9, 0.13);
+}
+
+.catalog-card:hover::before {
+    transform: scaleX(1);
+}
+
+.catalog-card[hidden] {
+    display: none;
+}
+
+
+/* ---------------------------------------------------------
+   7. PRODUCT IMAGES
+--------------------------------------------------------- */
+
+.catalog-card-image {
+    position: relative;
+    isolation: isolate;
+
+    display: block;
+
+    height: 280px;
+    overflow: hidden;
+
+    background: #eee7dc;
+}
+
+.catalog-card-image::after {
+    content: "";
+
+    position: absolute;
+    z-index: 0;
+    inset: 0;
+
+    background: linear-gradient(
+        180deg,
+        rgba(34, 6, 6, 0.18) 0%,
+        transparent 35%,
+        rgba(34, 6, 6, 0.30) 100%
+    );
+
+    pointer-events: none;
+
+    transition: opacity 0.35s ease;
+}
+
+.catalog-card:hover .catalog-card-image::after {
+    opacity: 0.8;
+}
+
+.catalog-card-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.catalog-card:hover .catalog-card-image img {
+    transform: scale(1.07);
+}
+
+
+/* Image category label */
+
+.catalog-card-index {
+    position: absolute;
+    z-index: 1;
+
+    top: 18px;
+    left: 18px;
+
+    padding: 9px 12px;
+
+    border: 1px solid rgba(226, 200, 137, 0.5);
+    border-radius: 2px;
+
+    color: #ffffff;
+    background: rgba(34, 6, 6, 0.76);
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+
+    backdrop-filter: blur(8px);
+}
+
+
+/* Image arrow */
+
+.catalog-card-arrow {
+    position: absolute;
+    z-index: 1;
+
+    right: 18px;
+    bottom: 18px;
+
+    display: grid;
+    place-items: center;
+
+    width: 46px;
+    height: 46px;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+
+    color: #300909;
+    background: #e2c889;
+
+    font-size: 21px;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+.catalog-card:hover .catalog-card-arrow {
+    transform: rotate(45deg);
+    background: #ffffff;
+}
+
+
+/* ---------------------------------------------------------
+   8. PRODUCT CARD CONTENT
+--------------------------------------------------------- */
+
+.catalog-card-body {
+    position: relative;
+
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    padding: 28px 25px 25px;
+}
+
+.catalog-card-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7px;
+
+    margin-bottom: 15px;
+
+    color: #8c756c;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    line-height: 1.6;
+}
+
+.meta-dot {
+    width: 3px;
+    height: 3px;
+
+    flex: 0 0 auto;
+
+    border-radius: 50%;
+    background: #c9a45c;
+}
+
+.catalog-card-body h3 {
+    margin: 0 0 12px;
+
+    color: #300909;
+
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    line-height: 1.15;
+}
+
+.catalog-card-body > p {
+    min-height: 66px;
+    margin: 0 0 23px;
+
+    color: #6e6662;
+
+    font-size: 13px;
+    line-height: 1.85;
+}
+
+
+/* ---------------------------------------------------------
+   9. PRODUCT SUBCATEGORY LINKS
+--------------------------------------------------------- */
+
+.catalog-subcategories {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+
+    margin-bottom: 22px;
+
+    border-top: 1px solid #eee7df;
+}
+
+.catalog-subcategories a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    min-height: 41px;
+    padding: 11px 0;
+
+    border-bottom: 1px solid #eee7df;
+
+    color: #514743;
+
+    font-size: 12px;
+
+    transition:
+        color 0.25s ease,
+        padding 0.25s ease;
+}
+
+.catalog-subcategories a span {
+    color: #b28a3b;
+    font-size: 15px;
+
+    transition: transform 0.25s ease;
+}
+
+.catalog-subcategories a:hover {
+    padding-left: 6px;
+    color: #4b1010;
+}
+
+.catalog-subcategories a:hover span {
+    transform: translate(2px, -2px);
+}
+
+
+/* ---------------------------------------------------------
+   10. PRODUCT CARD FOOTER ACTION
+--------------------------------------------------------- */
+
+.catalog-card-cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+
+    min-height: 46px;
+    margin-top: auto;
+    padding-top: 16px;
+
+    border-top: 1px solid rgba(75, 16, 16, 0.14);
+
+    color: #4b1010;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+.catalog-card-cta > span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 32px;
+    height: 32px;
+
+    flex: 0 0 auto;
+
+    border: 1px solid rgba(201, 164, 92, 0.6);
+    border-radius: 50%;
+
+    color: #4b1010;
+    background: #ffffff;
+
+    font-size: 18px;
+
+    transition:
+        color 0.25s ease,
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+.catalog-card-cta:hover > span {
+    transform: translateX(4px);
+
+    color: #ffffff;
+    background: #4b1010;
+}
+
+
+/* Empty search result */
+
+.catalog-empty {
+    padding: 40px 20px;
+
+    color: var(--text-soft, #69615d);
+    text-align: center;
+}
+
+.catalog-empty[hidden] {
+    display: none;
+}
+
+.catalog-note {
+    margin: 25px 0 0;
+
+    color: var(--text-light, #85807c);
+
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+
+/* ---------------------------------------------------------
+   11. HEATING IMAGE FALLBACK
+--------------------------------------------------------- */
+
+.catalog-card-image.image-fallback {
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            rgba(201, 164, 92, 0.22),
+            transparent 55%
+        ),
+        linear-gradient(
+            135deg,
+            #f2e9dc,
+            #e1d0bb
+        );
+}
+
+.catalog-card-image.image-fallback::before {
+    content: "HEATING";
+
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+
+    display: grid;
+    place-items: center;
+
+    color: rgba(75, 16, 16, 0.65);
+
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 34px;
+    letter-spacing: 4px;
+}
+
+
+/* ---------------------------------------------------------
+   12. CONTACT / BUSINESS ENQUIRY SECTION
+--------------------------------------------------------- */
+
+.products-contact {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+
+    padding: 76px 0;
+
+    color: #ffffff;
+
+    background: linear-gradient(
+        120deg,
+        #300909,
+        #4b1010
+    );
+}
+
+.products-contact::after {
+    content: "";
+
+    position: absolute;
+    z-index: -1;
+
+    width: 360px;
+    height: 360px;
+
+    right: -120px;
+    top: -210px;
+
+    border: 1px solid rgba(201, 164, 92, 0.24);
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 0 45px rgba(201, 164, 92, 0.025),
+        0 0 0 90px rgba(201, 164, 92, 0.02);
+
+    pointer-events: none;
+}
+
+.products-contact-inner {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+}
+
+.products-contact .section-kicker {
+    display: inline-block;
+    margin-bottom: 14px;
+
+    color: #e2c889;
+}
+
+.products-contact h2 {
+    margin: 0 0 12px;
+
+    color: #ffffff;
+
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(32px, 4vw, 46px);
+    font-weight: 600;
+    line-height: 1.12;
+}
+
+.products-contact p {
+    max-width: 570px;
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.7);
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.products-contact-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    flex-shrink: 0;
+}
+
+.products-contact .btn-secondary {
+    border-color: rgba(255, 255, 255, 0.38);
+}
+
+
+/* ---------------------------------------------------------
+   13. TABLET RESPONSIVENESS
+--------------------------------------------------------- */
+
+@media (max-width: 1100px) {
+
+    .products-shell {
+        width: calc(100% - 60px);
+    }
+
+    .products-hero-inner {
+        grid-template-columns:
+            minmax(0, 1.15fr)
+            minmax(240px, 0.85fr);
+    }
+
+    .catalog-grid {
+        gap: 18px;
+    }
+
+    .catalog-card-image {
+        height: 235px;
+    }
+
+    .catalog-card-body {
+        padding: 23px 18px;
+    }
+
+    .catalog-card-meta {
+        letter-spacing: 0.7px;
+    }
+
+    .catalog-card-body h3 {
+        font-size: 30px;
+    }
+
+    .hero-logo-frame {
+        width: 235px;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .products-page {
+        padding-top: 76px;
+    }
+
+    .products-hero-inner {
+        min-height: auto;
+        padding-block: 48px 60px;
+    }
+
+    .products-hero-art {
+        min-height: 300px;
+    }
+
+    .art-ring {
+        width: 260px;
+    }
+
+    .art-ring-two {
+        width: 290px;
+    }
+
+    .art-gold-line {
+        width: 290px;
+    }
+
+    .catalog-intro {
+        padding-top: 72px;
+    }
+
+    .catalog-intro-grid {
+        gap: 30px;
+    }
+
+    .catalog-toolbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .catalog-search {
+        width: 100%;
+    }
+
+    .catalog-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .catalog-card:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .catalog-card:last-child .catalog-card-body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 24px;
+    }
+
+    .catalog-card:last-child .catalog-card-meta,
+    .catalog-card:last-child h3,
+    .catalog-card:last-child .catalog-card-body > p {
+        grid-column: 1 / -1;
+    }
+
+    .catalog-card:last-child .catalog-subcategories {
+        grid-column: 1;
+    }
+
+    .catalog-card:last-child .catalog-card-cta {
+        grid-column: 2;
+        align-self: end;
+    }
+
+    .products-contact-inner {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   14. MOBILE RESPONSIVENESS
+--------------------------------------------------------- */
+
+@media (max-width: 700px) {
+
+    .products-shell {
+        width: calc(100% - 40px);
+    }
+
+    .products-hero-inner {
+        display: block;
+        padding-block: 30px 48px;
+    }
+
+    .breadcrumb {
+        margin-bottom: 30px;
+    }
+
+    .products-hero h1 {
+        font-size: clamp(42px, 11vw, 58px);
+    }
+
+    .products-hero-copy > p {
+        font-size: 14px;
+    }
+
+    .products-hero-art {
+        min-height: 245px;
+        margin-top: 22px;
+    }
+
+    .hero-logo-frame {
+        width: 205px;
+        padding: 25px;
+    }
+
+    .hero-company-logo {
+        max-height: 155px;
+    }
+
+    .art-ring-one {
+        width: 240px;
+    }
+
+    .art-ring-two {
+        width: 275px;
+    }
+
+    .art-gold-line {
+        width: 240px;
+    }
+
+    .art-caption {
+        bottom: 0;
+        letter-spacing: 3px;
+    }
+
+    .products-hero-bottom {
+        gap: 12px;
+        font-size: 8px;
+        letter-spacing: 1.7px;
+    }
+
+    .catalog-intro {
+        padding: 62px 0 25px;
+    }
+
+    .catalog-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .catalog-intro h2 {
+        font-size: 39px;
+    }
+
+    .catalog-section {
+        padding: 25px 0 70px;
+    }
+
+    .catalog-tabs {
+        width: 100%;
+        gap: 6px;
+    }
+
+    .catalog-tab {
+        min-height: 39px;
+        padding-inline: 12px;
+        font-size: 11px;
+    }
+
+    .catalog-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .catalog-card:last-child {
+        grid-column: auto;
+    }
+
+    .catalog-card:last-child .catalog-card-body {
+        display: flex;
+    }
+
+    .catalog-card:last-child .catalog-subcategories {
+        grid-column: auto;
+    }
+
+    .catalog-card-image {
+        height: 270px;
+    }
+
+    .catalog-card-body {
+        padding: 25px 23px;
+    }
+
+    .catalog-card-body h3 {
+        font-size: 33px;
+    }
+
+    .catalog-card-body > p {
+        min-height: 0;
+    }
+
+    .products-contact {
+        padding: 62px 0;
+    }
+
+    .products-contact-actions {
+        width: 100%;
+        max-width: 260px;
+
+        flex-direction: column;
+    }
+
+    .products-contact-actions a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   15. SMALL PHONES
+--------------------------------------------------------- */
+
+@media (max-width: 420px) {
+
+    .products-shell {
+        width: calc(100% - 32px);
+    }
+
+    .products-hero h1 {
+        font-size: 39px;
+    }
+
+    .products-hero-bottom {
+        gap: 8px;
+        letter-spacing: 1px;
+    }
+
+    .catalog-intro h2 {
+        font-size: 34px;
+    }
+
+    .catalog-tab {
+        padding-inline: 10px;
+    }
+
+    .catalog-card-image {
+        height: 235px;
+    }
+
+    .catalog-card-body {
+        padding: 21px;
+    }
+
+    .catalog-card-body h3 {
+        font-size: 29px;
+    }
+
+    .hero-logo-frame {
+        width: 190px;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   16. ACCESSIBILITY — REDUCED MOTION
+--------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .products-page *,
+    .products-page *::before,
+    .products-page *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

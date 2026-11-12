@@ -1,0 +1,609 @@
+/* =========================================================
+   ARTHKIRAN ELECTRICAL PRODUCTS
+   BECOME A DEALER PAGE
+========================================================= */
+
+
+/* GENERAL PAGE */
+
+.dealer-page {
+    width: 100%;
+    background: #ffffff;
+    color: #333333;
+    font-family: "DM Sans", sans-serif;
+}
+
+.dealer-page * {
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PAGE INTRODUCTION
+========================================================= */
+
+.dealer-intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 290px;
+    padding: 60px 25px;
+    background: #f7f5f2;
+    border-bottom: 1px solid #eee9e4;
+    text-align: center;
+}
+
+.dealer-intro-content {
+    max-width: 740px;
+}
+
+.dealer-eyebrow,
+.dealer-section-label {
+    display: inline-block;
+    color: #a27b43;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.dealer-intro h1 {
+    margin: 12px 0;
+    color: #4b1010;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(35px, 5vw, 49px);
+    font-weight: 600;
+    line-height: 1.15;
+}
+
+.dealer-intro p {
+    max-width: 640px;
+    margin: 0 auto;
+    color: #77716b;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.dealer-intro-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+    padding: 13px 23px;
+    border: 1px solid #4b1010;
+    background: #4b1010;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background .2s ease;
+}
+
+.dealer-intro-btn:hover {
+    background: #681919;
+}
+
+.dealer-intro-btn span {
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   MAIN DEALER LAYOUT
+========================================================= */
+
+.dealer-main-section {
+    padding: 75px 25px;
+    background: #ffffff;
+}
+
+.dealer-layout {
+    display: grid;
+    grid-template-columns: minmax(0, .85fr) minmax(0, 1.35fr);
+    gap: 35px;
+    width: min(1160px, 100%);
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   LEFT INFORMATION PANEL
+========================================================= */
+
+.dealer-info-panel {
+    padding: 38px 32px;
+    background: #4b1010;
+    color: #ffffff;
+}
+
+.dealer-info-panel .dealer-section-label {
+    color: #d5b67e;
+}
+
+.dealer-info-panel h2 {
+    margin: 12px 0 13px;
+    color: #ffffff;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 29px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.dealer-info-description {
+    margin: 0 0 28px;
+    color: rgba(255, 255, 255, .75);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.dealer-info-divider {
+    height: 1px;
+    margin: 27px 0;
+    background: rgba(255, 255, 255, .2);
+}
+
+
+/* INFORMATION ITEMS */
+
+.dealer-info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.dealer-info-icon {
+    display: flex;
+    flex: 0 0 40px;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, .3);
+    border-radius: 50%;
+    color: #e1c38d;
+    font-size: 18px;
+}
+
+.dealer-info-item > div:last-child {
+    min-width: 0;
+    padding-top: 2px;
+}
+
+.dealer-info-title {
+    display: block;
+    margin-bottom: 6px;
+    color: #d5b67e;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.dealer-info-item a {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    transition: color .2s ease;
+}
+
+.dealer-info-item a:hover {
+    color: #e4c58f;
+}
+
+.dealer-info-item p {
+    margin: 0;
+    color: rgba(255, 255, 255, .85);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+
+/* INFORMATION NOTE */
+
+.dealer-info-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.dealer-note-mark {
+    color: #d5b67e;
+    font-size: 20px;
+}
+
+.dealer-info-note p {
+    margin: 0;
+    color: rgba(255, 255, 255, .75);
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.dealer-info-note strong {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   DEALER FORM PANEL
+========================================================= */
+
+.dealer-form-panel {
+    padding: 38px 40px;
+    border: 1px solid #eae6e1;
+    background: #ffffff;
+    box-shadow: 0 8px 28px rgba(45, 20, 15, .045);
+}
+
+.dealer-form-heading {
+    margin-bottom: 27px;
+}
+
+.dealer-form-heading h2 {
+    margin: 10px 0;
+    color: #4b1010;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 29px;
+    font-weight: 600;
+}
+
+.dealer-form-heading p {
+    margin: 0;
+    color: #85807b;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+
+/* FORM ROW */
+
+.dealer-form-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 17px;
+}
+
+
+/* FORM GROUP */
+
+.dealer-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 19px;
+}
+
+.dealer-form-group label {
+    color: #514b45;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.dealer-form-group input,
+.dealer-form-group select,
+.dealer-form-group textarea {
+    width: 100%;
+    min-width: 0;
+    padding: 13px 14px;
+    border: 1px solid #e5e0da;
+    border-radius: 2px;
+    outline: none;
+    background: #ffffff;
+    color: #333333;
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    transition:
+        border-color .2s ease,
+        box-shadow .2s ease;
+}
+
+.dealer-form-group input,
+.dealer-form-group select {
+    min-height: 45px;
+}
+
+.dealer-form-group textarea {
+    min-height: 95px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.dealer-form-group input::placeholder,
+.dealer-form-group textarea::placeholder {
+    color: #aaa39b;
+    font-size: 11px;
+}
+
+.dealer-form-group select {
+    color: #77716b;
+    cursor: pointer;
+}
+
+.dealer-form-group select:valid {
+    color: #333333;
+}
+
+.dealer-form-group input:focus,
+.dealer-form-group select:focus,
+.dealer-form-group textarea:focus {
+    border-color: #8b5555;
+    box-shadow: 0 0 0 3px rgba(75, 16, 16, .07);
+}
+
+
+/* FORM NOTE */
+
+.dealer-form-note {
+    margin: 0 0 17px;
+    color: #918b84;
+    font-size: 10px;
+    line-height: 1.7;
+}
+
+
+/* SUBMIT BUTTON */
+
+.dealer-submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 20px;
+    border: 1px solid #4b1010;
+    border-radius: 2px;
+    background: #4b1010;
+    color: #ffffff;
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background .2s ease, border-color .2s ease;
+}
+
+.dealer-submit-btn:hover {
+    border-color: #681919;
+    background: #681919;
+}
+
+.dealer-submit-btn:disabled {
+    opacity: .65;
+    cursor: wait;
+}
+
+.dealer-submit-arrow {
+    font-size: 16px;
+}
+
+
+/* FORM STATUS */
+
+.dealer-form-status {
+    min-height: 18px;
+    margin: 12px 0 0;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.dealer-form-status.success {
+    color: #287547;
+}
+
+.dealer-form-status.error {
+    color: #b42318;
+}
+
+.dealer-form-status.info {
+    color: #8a682e;
+}
+
+
+/* =========================================================
+   DIRECT CONTACT SECTION
+========================================================= */
+
+.dealer-contact-section {
+    padding: 40px 25px;
+    background: #f8f7f5;
+    border-top: 1px solid #eee9e4;
+}
+
+.dealer-contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    width: min(1100px, 100%);
+    margin: 0 auto;
+}
+
+.dealer-contact-content h2 {
+    margin: 9px 0;
+    color: #4b1010;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.dealer-contact-content p {
+    margin: 0;
+    color: #817a73;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+
+/* CONTACT BUTTONS */
+
+.dealer-contact-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.dealer-whatsapp-btn,
+.dealer-email-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 13px 18px;
+    border: 1px solid #4b1010;
+    font-size: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+
+.dealer-whatsapp-btn {
+    background: #4b1010;
+    color: #ffffff;
+}
+
+.dealer-whatsapp-btn:hover {
+    background: #681919;
+}
+
+.dealer-email-btn {
+    background: #ffffff;
+    color: #4b1010;
+}
+
+.dealer-email-btn:hover {
+    background: #f2ece7;
+}
+
+.dealer-whatsapp-btn span,
+.dealer-email-btn span {
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   TABLET RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .dealer-main-section {
+        padding: 55px 22px;
+    }
+
+    .dealer-layout {
+        grid-template-columns: 1fr 1.2fr;
+        gap: 20px;
+    }
+
+    .dealer-info-panel {
+        padding: 30px 23px;
+    }
+
+    .dealer-form-panel {
+        padding: 30px 25px;
+    }
+
+    .dealer-info-panel h2,
+    .dealer-form-heading h2 {
+        font-size: 25px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .dealer-intro {
+        min-height: 245px;
+        padding: 45px 20px;
+    }
+
+    .dealer-intro p {
+        font-size: 12px;
+    }
+
+    .dealer-main-section {
+        padding: 35px 15px;
+    }
+
+    .dealer-layout {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .dealer-info-panel {
+        padding: 28px 23px;
+    }
+
+    .dealer-form-panel {
+        padding: 28px 20px;
+    }
+
+    .dealer-form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .dealer-contact-section {
+        padding: 35px 18px;
+    }
+
+    .dealer-contact-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .dealer-contact-content h2 {
+        font-size: 23px;
+    }
+
+    .dealer-contact-actions {
+        width: 100%;
+    }
+
+    .dealer-whatsapp-btn,
+    .dealer-email-btn {
+        flex: 1;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .dealer-intro h1 {
+        font-size: 33px;
+    }
+
+    .dealer-info-panel {
+        padding: 25px 18px;
+    }
+
+    .dealer-form-panel {
+        padding: 25px 15px;
+    }
+
+    .dealer-contact-actions {
+        flex-direction: column;
+    }
+
+    .dealer-whatsapp-btn,
+    .dealer-email-btn {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,459 @@
+/* =========================================================
+   ARTHKIRAN ELECTRICAL PRODUCTS
+   VENTILATOR FANS CATALOGUE
+========================================================= */
+
+
+/* =========================================================
+   MAIN PAGE
+========================================================= */
+
+.ventilator-page {
+    min-height: 500px;
+    background: #ffffff;
+}
+
+.ventilator-catalogue {
+    width: min(1240px, calc(100% - 60px));
+    margin: 0 auto;
+    padding: 35px 0 75px;
+}
+
+
+/* =========================================================
+   PAGE HEADING
+========================================================= */
+
+.ventilator-heading {
+    margin-bottom: 25px;
+}
+
+.ventilator-heading h1 {
+    margin: 0;
+
+    color: #4b1010;
+
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   PRODUCT TOOLBAR
+========================================================= */
+
+.ventilator-toolbar {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    padding: 18px 0;
+    margin-bottom: 25px;
+
+    border-top: 1px solid #eee9e4;
+    border-bottom: 1px solid #eee9e4;
+}
+
+.ventilator-filter-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.ventilator-filter-heading > span {
+    color: #4b1010;
+
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.ventilator-filter-heading small {
+    color: #888888;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   CATEGORY FILTER BUTTONS
+========================================================= */
+
+.ventilator-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.filter-btn {
+    padding: 9px 15px;
+
+    border: 1px solid #e4ded8;
+    border-radius: 2px;
+
+    background: #ffffff;
+    color: #555555;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all .2s ease;
+}
+
+.filter-btn:hover {
+    border-color: #4b1010;
+    color: #4b1010;
+}
+
+.filter-btn.active {
+    border-color: #4b1010;
+    background: #4b1010;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   SINGLE PRODUCT GRID
+   8 PRODUCTS = 4 COLUMNS × 2 ROWS ON WIDE SCREENS
+========================================================= */
+
+.ventilator-product-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 18px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   PRODUCT CARD
+========================================================= */
+
+.ventilator-product-card {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+    height: 100%;
+
+    overflow: hidden;
+
+    border: 1px solid #eae6e1;
+    background: #ffffff;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease;
+}
+
+.ventilator-product-card:hover {
+    transform: translateY(-3px);
+
+    border-color: #d8c9b6;
+
+    box-shadow: 0 10px 24px rgba(45, 20, 15, .08);
+}
+
+
+/* =========================================================
+   PRODUCT IMAGE AREA
+========================================================= */
+
+.ventilator-product-image {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 195px;
+
+    padding: 15px;
+
+    overflow: hidden;
+
+    background: #f7f6f4;
+}
+
+.ventilator-product-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    transition: transform .3s ease;
+}
+
+.ventilator-product-card:hover .ventilator-product-image img {
+    transform: scale(1.035);
+}
+
+.ventilator-image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    color: #b3aaa1;
+
+    font-size: 11px;
+    letter-spacing: 1px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   PRODUCT DETAILS
+========================================================= */
+
+.ventilator-product-details {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    padding: 15px 14px 15px;
+}
+
+.ventilator-product-category {
+    color: #a27b43;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+}
+
+.ventilator-product-details h3 {
+    min-height: 42px;
+
+    margin: 7px 0 12px;
+
+    color: #4b1010;
+
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+
+/* =========================================================
+   PRODUCT SPECIFICATIONS
+========================================================= */
+
+.ventilator-specifications {
+    margin: 0 0 15px;
+    padding: 0;
+
+    list-style: none;
+}
+
+.ventilator-specifications li {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 8px;
+
+    padding: 7px 0;
+
+    border-bottom: 1px solid #f0ede9;
+
+    font-size: 11px;
+}
+
+.ventilator-specifications li span {
+    color: #85807b;
+    flex-shrink: 0;
+}
+
+.ventilator-specifications li strong {
+    color: #333333;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   WHATSAPP ENQUIRY BUTTON
+========================================================= */
+
+.ventilator-enquiry-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    width: 100%;
+
+    margin-top: auto;
+    padding: 12px 9px;
+
+    border: 1px solid #4b1010;
+    border-radius: 2px;
+
+    background: #4b1010;
+    color: #ffffff;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    transition: all .2s ease;
+}
+
+.ventilator-enquiry-btn:hover {
+    background: #681919;
+    border-color: #681919;
+}
+
+.ventilator-enquiry-btn span {
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .ventilator-catalogue {
+        width: calc(100% - 40px);
+    }
+
+    .ventilator-product-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .ventilator-product-image {
+        height: 190px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .ventilator-product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 520px) {
+
+    .ventilator-catalogue {
+        width: calc(100% - 28px);
+        padding: 28px 0 55px;
+    }
+
+    .ventilator-heading h1 {
+        font-size: 30px;
+    }
+
+    .ventilator-toolbar {
+        gap: 14px;
+        padding: 15px 0;
+        margin-bottom: 18px;
+    }
+
+    .ventilator-filters {
+        gap: 7px;
+    }
+
+    .filter-btn {
+        padding: 8px 10px;
+        font-size: 10px;
+    }
+
+    .ventilator-product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .ventilator-product-image {
+        height: 145px;
+        padding: 9px;
+    }
+
+    .ventilator-product-details {
+        padding: 11px 10px;
+    }
+
+    .ventilator-product-details h3 {
+        min-height: 40px;
+        font-size: 14px;
+        margin: 6px 0 10px;
+    }
+
+    .ventilator-product-category {
+        font-size: 8px;
+    }
+
+    .ventilator-specifications li {
+        gap: 5px;
+        padding: 6px 0;
+        font-size: 9px;
+    }
+
+    .ventilator-specifications li strong {
+        font-size: 9px;
+    }
+
+    .ventilator-enquiry-btn {
+        padding: 10px 4px;
+        font-size: 9px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL SCREENS
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .ventilator-product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ventilator-product-image {
+        height: 190px;
+    }
+
+}

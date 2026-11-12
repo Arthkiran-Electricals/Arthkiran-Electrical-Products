@@ -1,0 +1,443 @@
+/* =========================================================
+   ARTHKIRAN ELECTRICAL PRODUCTS
+   EXHAUST FANS CATALOGUE
+========================================================= */
+
+
+/* =========================================================
+   MAIN PAGE
+========================================================= */
+
+.exhaust-page {
+    min-height: 500px;
+    background: #ffffff;
+}
+
+.exhaust-catalogue {
+    width: min(1240px, calc(100% - 60px));
+    margin: 0 auto;
+    padding: 35px 0 75px;
+}
+
+
+/* =========================================================
+   PAGE HEADING
+========================================================= */
+
+.exhaust-heading {
+    margin-bottom: 25px;
+}
+
+.exhaust-heading h1 {
+    margin: 0;
+
+    color: #4b1010;
+
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   PRODUCT TOOLBAR
+========================================================= */
+
+.exhaust-toolbar {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    padding: 18px 0;
+    margin-bottom: 25px;
+
+    border-top: 1px solid #eee9e4;
+    border-bottom: 1px solid #eee9e4;
+}
+
+.exhaust-filter-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.exhaust-filter-heading > span {
+    color: #4b1010;
+
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.exhaust-filter-heading small {
+    color: #888888;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   CATEGORY FILTER BUTTONS
+========================================================= */
+
+.exhaust-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.filter-btn {
+    padding: 9px 15px;
+
+    border: 1px solid #e4ded8;
+    border-radius: 2px;
+
+    background: #ffffff;
+    color: #555555;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all .2s ease;
+}
+
+.filter-btn:hover {
+    border-color: #4b1010;
+    color: #4b1010;
+}
+
+.filter-btn.active {
+    border-color: #4b1010;
+    background: #4b1010;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   SINGLE PRODUCT GRID
+   12 PRODUCTS = 3 COLUMNS × 4 ROWS
+========================================================= */
+
+.exhaust-product-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 18px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   PRODUCT CARD
+========================================================= */
+
+.exhaust-product-card {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+    height: 100%;
+
+    overflow: hidden;
+
+    border: 1px solid #eae6e1;
+    background: #ffffff;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease;
+}
+
+.exhaust-product-card:hover {
+    transform: translateY(-3px);
+
+    border-color: #d8c9b6;
+
+    box-shadow: 0 10px 24px rgba(45, 20, 15, .08);
+}
+
+
+/* =========================================================
+   PRODUCT IMAGE AREA
+========================================================= */
+
+.exhaust-product-image {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 210px;
+
+    padding: 15px;
+
+    overflow: hidden;
+
+    background: #f7f6f4;
+}
+
+.exhaust-product-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    transition: transform .3s ease;
+}
+
+.exhaust-product-card:hover .exhaust-product-image img {
+    transform: scale(1.035);
+}
+
+.exhaust-image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    color: #b3aaa1;
+
+    font-size: 11px;
+    letter-spacing: 1px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   PRODUCT DETAILS
+========================================================= */
+
+.exhaust-product-details {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    padding: 16px 17px 16px;
+}
+
+.exhaust-product-category {
+    color: #a27b43;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+}
+
+.exhaust-product-details h3 {
+    min-height: 42px;
+
+    margin: 7px 0 12px;
+
+    color: #4b1010;
+
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+
+/* =========================================================
+   PRODUCT SPECIFICATIONS
+========================================================= */
+
+.exhaust-specifications {
+    margin: 0 0 15px;
+    padding: 0;
+
+    list-style: none;
+}
+
+.exhaust-specifications li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    padding: 7px 0;
+
+    border-bottom: 1px solid #f0ede9;
+
+    font-size: 11px;
+}
+
+.exhaust-specifications li span {
+    color: #85807b;
+}
+
+.exhaust-specifications li strong {
+    color: #333333;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    text-align: right;
+}
+
+
+/* =========================================================
+   WHATSAPP ENQUIRY BUTTON
+========================================================= */
+
+.exhaust-enquiry-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    width: 100%;
+
+    margin-top: auto;
+    padding: 12px 9px;
+
+    border: 1px solid #4b1010;
+    border-radius: 2px;
+
+    background: #4b1010;
+    color: #ffffff;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    transition: all .2s ease;
+}
+
+.exhaust-enquiry-btn:hover {
+    background: #681919;
+    border-color: #681919;
+}
+
+.exhaust-enquiry-btn span {
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .exhaust-catalogue {
+        width: calc(100% - 40px);
+    }
+
+    .exhaust-product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .exhaust-product-image {
+        height: 200px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 520px) {
+
+    .exhaust-catalogue {
+        width: calc(100% - 28px);
+        padding: 28px 0 55px;
+    }
+
+    .exhaust-heading h1 {
+        font-size: 30px;
+    }
+
+    .exhaust-toolbar {
+        gap: 14px;
+        padding: 15px 0;
+        margin-bottom: 18px;
+    }
+
+    .exhaust-filters {
+        gap: 7px;
+    }
+
+    .filter-btn {
+        padding: 8px 10px;
+        font-size: 10px;
+    }
+
+    .exhaust-product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .exhaust-product-image {
+        height: 145px;
+        padding: 9px;
+    }
+
+    .exhaust-product-details {
+        padding: 11px 10px;
+    }
+
+    .exhaust-product-details h3 {
+        min-height: 40px;
+        font-size: 14px;
+        margin: 6px 0 10px;
+    }
+
+    .exhaust-product-category {
+        font-size: 8px;
+    }
+
+    .exhaust-specifications li {
+        gap: 5px;
+        padding: 6px 0;
+        font-size: 9px;
+    }
+
+    .exhaust-specifications li strong {
+        font-size: 9px;
+    }
+
+    .exhaust-enquiry-btn {
+        padding: 10px 4px;
+        font-size: 9px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL SCREENS
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .exhaust-product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .exhaust-product-image {
+        height: 190px;
+    }
+
+}

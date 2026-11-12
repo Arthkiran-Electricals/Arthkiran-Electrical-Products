@@ -1,0 +1,753 @@
+/* =========================================================
+   ARTHKIRAN ELECTRICAL PRODUCTS
+   CONTACT PAGE
+========================================================= */
+
+
+/* =========================================================
+   GENERAL PAGE
+========================================================= */
+
+.contact-page {
+    width: 100%;
+    background: #ffffff;
+    color: #333333;
+    font-family: "DM Sans", sans-serif;
+}
+
+.contact-page * {
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PAGE INTRODUCTION
+========================================================= */
+
+.contact-intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 245px;
+    padding: 55px 25px;
+    background: #f7f5f2;
+    border-bottom: 1px solid #eee9e4;
+    text-align: center;
+}
+
+.contact-intro-content {
+    max-width: 720px;
+}
+
+.contact-eyebrow,
+.contact-section-label {
+    display: inline-block;
+    color: #a27b43;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.contact-intro h1 {
+    margin: 12px 0;
+    color: #4b1010;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(34px, 5vw, 48px);
+    font-weight: 600;
+    line-height: 1.15;
+}
+
+.contact-intro p {
+    max-width: 620px;
+    margin: 0 auto;
+    color: #77716b;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   MAIN CONTACT LAYOUT
+========================================================= */
+
+.contact-main-section {
+    padding: 75px 25px;
+    background: #ffffff;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: minmax(0, .85fr) minmax(0, 1.35fr);
+    gap: 35px;
+    width: min(1160px, 100%);
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   CONTACT INFORMATION PANEL
+========================================================= */
+
+.contact-info-panel {
+    padding: 38px 32px;
+    background: #4b1010;
+    color: #ffffff;
+}
+
+.contact-info-panel .contact-section-label {
+    color: #d5b67e;
+}
+
+.contact-info-panel h2 {
+    margin: 12px 0 13px;
+    color: #ffffff;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 29px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.contact-info-description {
+    margin: 0 0 35px;
+    color: rgba(255, 255, 255, .75);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+
+/* CONTACT DETAILS */
+
+.contact-info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 27px;
+}
+
+.contact-info-icon {
+    display: flex;
+    flex: 0 0 40px;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, .3);
+    border-radius: 50%;
+    color: #e1c38d;
+    font-size: 18px;
+}
+
+.contact-info-text {
+    min-width: 0;
+    padding-top: 2px;
+}
+
+.contact-info-title {
+    display: block;
+    margin-bottom: 6px;
+    color: #d5b67e;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.contact-info-text a {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    transition: color .2s ease;
+}
+
+.contact-info-text a:hover {
+    color: #e4c58f;
+}
+
+.contact-info-text p {
+    margin: 0;
+    color: rgba(255, 255, 255, .85);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.contact-info-divider {
+    height: 1px;
+    margin: 35px 0 22px;
+    background: rgba(255, 255, 255, .2);
+}
+
+.contact-info-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.contact-note-mark {
+    color: #d5b67e;
+    font-size: 20px;
+}
+
+.contact-info-note p {
+    margin: 0;
+    color: rgba(255, 255, 255, .75);
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.contact-info-note strong {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   CONTACT FORM PANEL
+========================================================= */
+
+.contact-form-panel {
+    padding: 38px 40px;
+    border: 1px solid #eae6e1;
+    background: #ffffff;
+    box-shadow: 0 8px 28px rgba(45, 20, 15, .045);
+}
+
+.contact-form-heading {
+    margin-bottom: 27px;
+}
+
+.contact-form-heading h2 {
+    margin: 10px 0;
+    color: #4b1010;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 29px;
+    font-weight: 600;
+}
+
+.contact-form-heading p {
+    margin: 0;
+    color: #85807b;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+
+/* FORM ROW */
+
+.contact-form-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 17px;
+}
+
+
+/* FORM GROUP */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 19px;
+}
+
+.form-group label {
+    color: #514b45;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    min-width: 0;
+    padding: 13px 14px;
+    border: 1px solid #e5e0da;
+    border-radius: 2px;
+    outline: none;
+    background: #ffffff;
+    color: #333333;
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    transition:
+        border-color .2s ease,
+        box-shadow .2s ease;
+}
+
+.form-group input,
+.form-group select {
+    min-height: 45px;
+}
+
+.form-group textarea {
+    min-height: 125px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa39b;
+    font-size: 11px;
+}
+
+.form-group select {
+    color: #77716b;
+    cursor: pointer;
+}
+
+.form-group select:valid {
+    color: #333333;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #8b5555;
+    box-shadow: 0 0 0 3px rgba(75, 16, 16, .07);
+}
+
+
+/* FORM CONSENT */
+
+.contact-form-consent {
+    margin: -2px 0 17px;
+}
+
+.contact-form-consent span {
+    color: #918b84;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+
+/* SUBMIT BUTTON */
+
+.contact-submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 20px;
+    border: 1px solid #4b1010;
+    border-radius: 2px;
+    background: #4b1010;
+    color: #ffffff;
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background .2s ease, border-color .2s ease;
+}
+
+.contact-submit-btn:hover {
+    border-color: #681919;
+    background: #681919;
+}
+
+.contact-submit-btn:disabled {
+    opacity: .65;
+    cursor: wait;
+}
+
+.submit-arrow {
+    font-size: 16px;
+}
+
+
+/* FORM STATUS */
+
+.contact-form-status {
+    min-height: 18px;
+    margin: 12px 0 0;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.contact-form-status.success {
+    color: #287547;
+}
+
+.contact-form-status.error {
+    color: #b42318;
+}
+
+.contact-form-status.info {
+    color: #8a682e;
+}
+
+
+/* =========================================================
+   QR CODE SECTION
+========================================================= */
+
+.contact-connect-section {
+    padding: 70px 25px 80px;
+    background: #f8f7f5;
+    border-top: 1px solid #eee9e4;
+    border-bottom: 1px solid #eee9e4;
+}
+
+.contact-connect-heading {
+    max-width: 650px;
+    margin: 0 auto 38px;
+    text-align: center;
+}
+
+.contact-connect-heading h2 {
+    margin: 11px 0;
+    color: #4b1010;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.contact-connect-heading p {
+    margin: 0;
+    color: #817a73;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+
+/* QR GRID */
+
+.contact-qr-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    width: min(760px, 100%);
+    margin: 0 auto;
+}
+
+
+/* QR CARD */
+
+.contact-qr-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 25px;
+    border: 1px solid #e9e4dd;
+    background: #ffffff;
+    text-align: center;
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.contact-qr-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(45, 20, 15, .07);
+}
+
+
+/* QR PLATFORM ICON */
+
+.qr-platform-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    margin-bottom: 14px;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.whatsapp-icon {
+    background: #258b52;
+}
+
+.instagram-icon {
+    background: linear-gradient(135deg, #7939a8, #d64278, #ed9b42);
+}
+
+
+/* QR CARD TEXT */
+
+.contact-qr-card h3 {
+    margin: 0 0 8px;
+    color: #4b1010;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.contact-qr-card > p {
+    max-width: 280px;
+    min-height: 42px;
+    margin: 0 0 20px;
+    color: #85807b;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+
+/* QR IMAGE BOX */
+
+.qr-image-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    height: 190px;
+    padding: 10px;
+    border: 1px solid #eee9e4;
+    background: #ffffff;
+}
+
+.qr-code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 168px;
+    height: 168px;
+}
+
+.qr-code img,
+.qr-code canvas {
+    display: block;
+    width: 168px !important;
+    height: 168px !important;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.qr-caption {
+    margin-top: 13px;
+    color: #8b837b;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+
+.qr-action-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+    color: #4b1010;
+    font-size: 11px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color .2s ease;
+}
+
+.qr-action-link:hover {
+    color: #a27b43;
+}
+
+.qr-action-link span {
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   BOTTOM CONTACT STRIP
+========================================================= */
+
+.contact-bottom-strip {
+    padding: 35px 25px;
+    background: #ffffff;
+}
+
+.contact-bottom-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    width: min(1100px, 100%);
+    margin: 0 auto;
+}
+
+.contact-bottom-content > div > span {
+    color: #a27b43;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.contact-bottom-content h2 {
+    margin: 7px 0 0;
+    color: #4b1010;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.contact-bottom-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-shrink: 0;
+    padding: 13px 22px;
+    border: 1px solid #4b1010;
+    background: #4b1010;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background .2s ease;
+}
+
+.contact-bottom-btn:hover {
+    background: #681919;
+}
+
+.contact-bottom-btn span {
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   TABLET RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .contact-main-section {
+        padding: 55px 22px;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr 1.2fr;
+        gap: 20px;
+    }
+
+    .contact-info-panel {
+        padding: 30px 23px;
+    }
+
+    .contact-form-panel {
+        padding: 30px 25px;
+    }
+
+    .contact-info-panel h2,
+    .contact-form-heading h2 {
+        font-size: 25px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .contact-intro {
+        min-height: 210px;
+        padding: 45px 20px;
+    }
+
+    .contact-intro p {
+        font-size: 12px;
+    }
+
+    .contact-main-section {
+        padding: 35px 15px;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .contact-info-panel {
+        padding: 28px 23px;
+    }
+
+    .contact-form-panel {
+        padding: 28px 20px;
+    }
+
+    .contact-form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .contact-connect-section {
+        padding: 50px 15px;
+    }
+
+    .contact-connect-heading h2 {
+        font-size: 27px;
+    }
+
+    .contact-qr-grid {
+        grid-template-columns: 1fr;
+        max-width: 380px;
+        gap: 16px;
+    }
+
+    .contact-qr-card {
+        padding: 27px 18px;
+    }
+
+    .contact-qr-card > p {
+        min-height: auto;
+    }
+
+    .contact-bottom-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .contact-bottom-content h2 {
+        font-size: 22px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .contact-intro h1 {
+        font-size: 33px;
+    }
+
+    .contact-info-panel {
+        padding: 25px 18px;
+    }
+
+    .contact-form-panel {
+        padding: 25px 15px;
+    }
+
+    .contact-qr-card {
+        padding: 24px 13px;
+    }
+
+    .qr-image-box {
+        width: 180px;
+        height: 180px;
+    }
+
+    .qr-code {
+        width: 158px;
+        height: 158px;
+    }
+
+    .qr-code img,
+    .qr-code canvas {
+        width: 158px !important;
+        height: 158px !important;
+    }
+
+}

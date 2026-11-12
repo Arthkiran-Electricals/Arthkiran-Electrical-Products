@@ -1,0 +1,795 @@
+
+/* =========================================
+   ARTHKIRAN - ABOUT PAGE
+   Burgundy, Gold and Warm Neutral Theme
+========================================= */
+
+.about-page {
+    --about-burgundy: #4b1010;
+    --about-burgundy-dark: #300808;
+    --about-gold: #a27b43;
+    --about-light-gold: #d5b67e;
+    --about-cream: #f8f5ef;
+    --about-white: #ffffff;
+    --about-text: #4c4540;
+    --about-muted: #81776e;
+
+    font-family: "DM Sans", sans-serif;
+}
+
+
+/* =========================================
+   COMMON ELEMENTS
+========================================= */
+
+.about-page main section {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-page .about-eyebrow {
+    display: inline-block;
+    color: var(--about-gold);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+
+
+/* =========================================
+   INTRODUCTION
+========================================= */
+
+.about-page .about-intro {
+    padding: 90px 7%;
+    background: var(--about-cream);
+}
+
+.about-page .about-intro-container {
+    max-width: 1250px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 65px;
+}
+
+.about-page .intro-content {
+    max-width: 610px;
+}
+
+.about-page .intro-content h1 {
+    margin: 20px 0;
+    color: var(--about-burgundy);
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(38px, 4.5vw, 58px);
+    font-weight: 600;
+    line-height: 1.18;
+}
+
+.about-page .intro-content h1 span {
+    color: var(--about-gold);
+}
+
+.about-page .about-gold-line {
+    width: 65px;
+    height: 3px;
+    margin: 25px 0;
+    background: var(--about-gold);
+}
+
+.about-page .intro-content p {
+    margin: 0 0 16px;
+    color: var(--about-text);
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.about-page .about-text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-top: 22px;
+    padding-bottom: 7px;
+
+    border-bottom: 1px solid var(--about-gold);
+    color: var(--about-burgundy);
+
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.about-page .about-text-link span {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.about-page .about-text-link:hover {
+    color: var(--about-gold);
+}
+
+.about-page .about-text-link:hover span {
+    transform: translateX(5px);
+}
+
+
+/* =========================================
+   INTRODUCTION LOGO AREA
+   Logo placement 1
+========================================= */
+
+.about-page .intro-visual {
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.about-page .intro-logo-frame {
+    width: min(100%, 440px);
+    min-height: 370px;
+    padding: 50px 35px;
+
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--about-white);
+    border: 1px solid rgba(162, 123, 67, 0.25);
+
+    box-shadow: 0 20px 65px rgba(75, 16, 16, 0.09);
+}
+
+.about-page .intro-main-logo {
+    display: block;
+    width: 190px;
+    max-width: 75%;
+    height: 150px;
+    object-fit: contain;
+}
+
+.about-page .intro-brand-caption {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.about-page .intro-brand-caption span {
+    display: block;
+    color: var(--about-burgundy);
+
+    font-family: "Playfair Display", serif;
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.about-page .intro-brand-caption small {
+    display: block;
+    margin-top: 9px;
+    color: var(--about-muted);
+
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.about-page .intro-decoration {
+    position: absolute;
+    border: 1px solid rgba(162, 123, 67, 0.4);
+    border-radius: 50%;
+}
+
+.about-page .intro-decoration-one {
+    width: 120px;
+    height: 120px;
+    top: 10px;
+    right: 0;
+}
+
+.about-page .intro-decoration-two {
+    width: 75px;
+    height: 75px;
+    bottom: 10px;
+    left: 0;
+}
+
+
+/* =========================================
+   BRAND STATEMENT
+   Logo placement 2
+========================================= */
+
+.about-page .brand-statement {
+    padding: 65px 7%;
+    background: var(--about-burgundy);
+    color: var(--about-white);
+}
+
+.about-page .statement-inner {
+    max-width: 1050px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+}
+
+.about-page .statement-logo {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+
+    padding: 22px;
+    background: var(--about-white);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-page .statement-logo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.about-page .statement-content {
+    max-width: 650px;
+}
+
+.about-page .statement-content .about-eyebrow {
+    color: var(--about-light-gold);
+}
+
+.about-page .statement-content h2 {
+    margin: 12px 0;
+    color: var(--about-light-gold);
+
+    font-family: "Playfair Display", serif;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.about-page .statement-content p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.85);
+
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   PRODUCT RANGE
+========================================= */
+
+.about-page .about-products {
+    padding: 90px 7%;
+    background: var(--about-white);
+}
+
+.about-page .about-section-heading {
+    max-width: 700px;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+
+.about-page .about-section-heading h2 {
+    margin: 13px 0;
+    color: var(--about-burgundy);
+
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.about-page .about-section-heading p {
+    margin: 0;
+    color: var(--about-muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.about-page .product-range-grid {
+    max-width: 950px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: minmax(260px, 480px);
+    justify-content: center;
+    gap: 30px;
+}
+
+.about-page .range-card {
+    overflow: hidden;
+    background: var(--about-cream);
+    border: 1px solid rgba(162, 123, 67, 0.18);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.about-page .range-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(75, 16, 16, 0.09);
+}
+
+
+/* Fans card visual */
+
+.about-page .range-image {
+    height: 255px;
+    overflow: hidden;
+}
+
+.about-page .fans-image {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            rgba(213, 182, 126, 0.22),
+            transparent 48%
+        ),
+        linear-gradient(
+            135deg,
+            #310909,
+            #591919
+        );
+}
+
+.about-page .fans-image::before,
+.about-page .fans-image::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(213, 182, 126, 0.35);
+    border-radius: 50%;
+}
+
+.about-page .fans-image::before {
+    width: 210px;
+    height: 210px;
+}
+
+.about-page .fans-image::after {
+    width: 260px;
+    height: 260px;
+}
+
+.about-page .fans-image-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.about-page .fans-small-text,
+.about-page .fans-bottom-line {
+    display: block;
+    color: var(--about-light-gold);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.about-page .fans-large-text {
+    display: block;
+    margin: 10px 0;
+
+    color: var(--about-white);
+    font-family: "Playfair Display", serif;
+    font-size: 54px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.about-page .fans-bottom-line {
+    font-size: 8px;
+    letter-spacing: 2px;
+}
+
+.about-page .range-content {
+    padding: 30px;
+}
+
+.about-page .range-number {
+    color: var(--about-gold);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.about-page .range-content h3 {
+    margin: 10px 0;
+    color: var(--about-burgundy);
+
+    font-family: "Playfair Display", serif;
+    font-size: 27px;
+}
+
+.about-page .range-content p {
+    margin: 0;
+    color: var(--about-muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.about-page .range-content a {
+    display: inline-block;
+    margin-top: 18px;
+
+    color: var(--about-burgundy);
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.about-page .range-content a:hover {
+    color: var(--about-gold);
+}
+
+
+/* =========================================
+   OUR APPROACH
+========================================= */
+
+.about-page .about-values {
+    padding: 90px 7%;
+    background: var(--about-cream);
+}
+
+.about-page .values-container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.about-page .values-heading {
+    max-width: 650px;
+    margin-bottom: 45px;
+}
+
+.about-page .values-heading h2 {
+    margin: 13px 0;
+    color: var(--about-burgundy);
+
+    font-family: "Playfair Display", serif;
+    font-size: 39px;
+    font-weight: 600;
+}
+
+.about-page .values-heading p {
+    margin: 0;
+    color: var(--about-muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.about-page .values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.about-page .value-card {
+    min-height: 230px;
+    padding: 32px 27px;
+
+    background: var(--about-white);
+    border: 1px solid rgba(162, 123, 67, 0.2);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.about-page .value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(75, 16, 16, 0.07);
+}
+
+.about-page .value-number {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(162, 123, 67, 0.5);
+    border-radius: 50%;
+
+    color: var(--about-gold);
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.about-page .value-card h3 {
+    margin: 0 0 12px;
+    color: var(--about-burgundy);
+
+    font-family: "Playfair Display", serif;
+    font-size: 21px;
+}
+
+.about-page .value-card p {
+    margin: 0;
+    color: var(--about-muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   CLOSING BRAND SECTION
+   Logo placement 3
+========================================= */
+
+.about-page .about-brand-close {
+    padding: 75px 7%;
+
+    background: linear-gradient(
+        120deg,
+        var(--about-burgundy-dark),
+        var(--about-burgundy)
+    );
+}
+
+.about-page .brand-close-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+}
+
+.about-page .brand-close-logo {
+    width: 135px;
+    height: 135px;
+    padding: 20px;
+    flex-shrink: 0;
+
+    background: var(--about-white);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-page .brand-close-logo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.about-page .brand-close-content {
+    max-width: 600px;
+}
+
+.about-page .brand-close-content > span {
+    color: var(--about-light-gold);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.about-page .brand-close-content h2 {
+    margin: 10px 0;
+    color: var(--about-white);
+
+    font-family: "Playfair Display", serif;
+    font-size: 39px;
+    font-weight: 600;
+}
+
+.about-page .brand-close-content p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.about-page .brand-close-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 25px;
+}
+
+.about-page .about-primary-btn,
+.about-page .about-secondary-btn {
+    min-height: 44px;
+    padding: 0 23px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.about-page .about-primary-btn {
+    background: var(--about-light-gold);
+    color: var(--about-burgundy-dark);
+    border: 1px solid var(--about-light-gold);
+}
+
+.about-page .about-primary-btn:hover {
+    background: var(--about-white);
+    border-color: var(--about-white);
+}
+
+.about-page .about-secondary-btn {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    color: var(--about-white);
+}
+
+.about-page .about-secondary-btn:hover {
+    background: var(--about-white);
+    color: var(--about-burgundy);
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 950px) {
+
+    .about-page .about-intro-container {
+        gap: 35px;
+    }
+
+    .about-page .intro-content h1 {
+        font-size: 43px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .about-page .about-intro {
+        padding: 65px 6%;
+    }
+
+    .about-page .about-intro-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .about-page .intro-content {
+        max-width: 100%;
+    }
+
+    .about-page .intro-content h1 {
+        font-size: 38px;
+    }
+
+    .about-page .intro-visual {
+        min-height: 330px;
+    }
+
+    .about-page .intro-logo-frame {
+        min-height: 300px;
+    }
+
+    .about-page .intro-main-logo {
+        height: 120px;
+    }
+
+    .about-page .statement-inner {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .about-page .statement-logo {
+        width: 125px;
+        height: 125px;
+    }
+
+    .about-page .statement-content h2 {
+        font-size: 32px;
+    }
+
+    .about-page .about-products,
+    .about-page .about-values {
+        padding: 70px 6%;
+    }
+
+    .about-page .about-section-heading h2,
+    .about-page .values-heading h2 {
+        font-size: 32px;
+    }
+
+    .about-page .range-image {
+        height: 220px;
+    }
+
+    .about-page .values-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .about-page .value-card {
+        min-height: auto;
+    }
+
+    .about-page .brand-close-inner {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .about-page .brand-close-logo {
+        width: 115px;
+        height: 115px;
+    }
+
+    .about-page .brand-close-content h2 {
+        font-size: 32px;
+    }
+
+    .about-page .brand-close-actions {
+        justify-content: center;
+    }
+
+}
+
+
+@media (max-width: 430px) {
+
+    .about-page .intro-content h1 {
+        font-size: 33px;
+    }
+
+    .about-page .intro-brand-caption span {
+        font-size: 19px;
+    }
+
+    .about-page .fans-large-text {
+        font-size: 46px;
+    }
+
+    .about-page .brand-close-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .about-page .about-primary-btn,
+    .about-page .about-secondary-btn {
+        width: 100%;
+    }
+
+}

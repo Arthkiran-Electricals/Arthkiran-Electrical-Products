@@ -1,0 +1,563 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4b1010">
+
+    <title>Heating Solutions | Arthkiran Electrical Products</title>
+    <meta name="description" content="Explore heating solutions from Arthkiran Electrical Products. Contact our team for room heater product information and enquiries.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Shared website stylesheet -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Heating page stylesheet -->
+    <link rel="stylesheet" href="heating.css">
+</head>
+<body>
+
+<!-- =====================================================
+     SHARED WEBSITE HEADER
+===================================================== -->
+<header class="site-header" id="siteHeader">
+    <div class="header-inner">
+
+        <a href="../index.html" class="logo-area"
+           aria-label="Arthkiran Electrical Products Home">
+            <div class="logo-box">
+                <img src="../Images/Logo.svg"
+                     class="logo-img"
+                     alt="Arthkiran Electrical Products logo">
+            </div>
+
+            <div class="brand-name">
+                ARTHKIRAN ELECTRICAL PRODUCTS
+            </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-container" id="mainNav"
+             aria-label="Main navigation">
+            <ul class="nav">
+
+                <li class="nav-item">
+                    <a href="../index.html">Home</a>
+                </li>
+
+                <li class="dropdown" data-key="consumers">
+                    <button class="nav-label"
+                            type="button"
+                            aria-expanded="false">
+                        Consumers
+                    </button>
+
+                    <div class="dropdown-content">
+
+                        <div class="menu-column">
+                            <h3>Lighting</h3>
+                            <a href="../Lighting/lighting.html">All Lighting</a>
+                            <a href="../Lighting/Led-bulb/Led.html">LED Bulb</a>
+                            <a href="../Lighting/Down-Light/Down.html">Downlight</a>
+                            <a href="../Lighting/Panel-Light/Panel.html">Panel Lights</a>
+                            <a href="../Lighting/Led-Batten/LedB.html">LED Batten</a>
+                            <a href="../Lighting/Outdoor-Lights/OL.html">Outdoor Lights</a>
+                            <a href="../Lighting/Rope/ROL.html">Rope &amp; Other Lights</a>
+                        </div>
+
+                        <div class="menu-column">
+                            <h3>Fans</h3>
+                            <a href="../fans.html">BLDC Fans</a>
+                            <a href="../fans.html">Ventilation Fans</a>
+                        </div>
+
+                        <div class="menu-column">
+                            <h3>Heating</h3>
+                            <a href="heaters.html" aria-current="page">Room Heaters</a>
+                        </div>
+
+                    </div>
+                </li>
+
+                <li class="dropdown" data-key="company">
+                    <button class="nav-label"
+                            type="button"
+                            aria-expanded="false">
+                        Company
+                    </button>
+
+                    <div class="dropdown-content">
+                        <div class="menu-column">
+                            <h3>Corporate</h3>
+                            <a href="../Corporate/About us/About.html">About Us</a>
+                        </div>
+
+                        <div class="menu-column">
+                            <h3>Contact</h3>
+                            <a href="../Contact us/Contact.html">Support</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="../Products/products.html">Products</a>
+                </li>
+
+                <li class="nav-item dealer-nav-item">
+                    <a href="../dealer/dealer.html">Become a Dealer</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="../Contact us/Contact.html">Contact Us</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button class="hamburger"
+                id="hamburger"
+                type="button"
+                aria-label="Open menu"
+                aria-controls="mobileNav"
+                aria-expanded="false">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div id="mobileNav"
+         class="mobile-nav"
+         aria-hidden="true"
+         role="navigation">
+
+        <div class="mobile-nav-inner">
+
+            <div class="mobile-brand">
+                <img src="../Images/Logo.svg" alt="Arthkiran logo">
+                <span>ARTHKIRAN ELECTRICAL PRODUCTS</span>
+            </div>
+
+            <ul class="mobile-nav-list">
+
+                <li class="mobile-item">
+                    <a href="../index.html">Home</a>
+                </li>
+
+                <li class="mobile-item mobile-dropdown">
+                    <button class="mobile-label"
+                            type="button"
+                            aria-expanded="false">
+                        Consumers
+                    </button>
+
+                    <div class="mobile-dropdown-content">
+
+                        <div class="mobile-menu-group">
+                            <span class="mobile-menu-title">Lighting</span>
+                            <a href="../Lighting/lighting.html">All Lighting</a>
+                            <a href="../Lighting/Led-bulb/Led.html">LED Bulb</a>
+                            <a href="../Lighting/Down-Light/Down.html">Downlight</a>
+                            <a href="../Lighting/Panel-Light/Panel.html">Panel Lights</a>
+                            <a href="../Lighting/Led-Batten/LedB.html">LED Batten</a>
+                            <a href="../Lighting/Outdoor-Lights/OL.html">Outdoor Lights</a>
+                            <a href="../Lighting/Rope/ROL.html">Rope &amp; Other Lights</a>
+                        </div>
+
+                        <div class="mobile-menu-group">
+                            <span class="mobile-menu-title">Fans</span>
+                            <a href="../fans.html">BLDC Fans</a>
+                        </div>
+
+                        <div class="mobile-menu-group">
+                            <span class="mobile-menu-title">Heating</span>
+                            <a href="heaters.html">Room Heaters</a>
+                        </div>
+
+                    </div>
+                </li>
+
+                <li class="mobile-item mobile-dropdown">
+                    <button class="mobile-label"
+                            type="button"
+                            aria-expanded="false">
+                        Company
+                    </button>
+
+                    <div class="mobile-dropdown-content">
+                        <div class="mobile-menu-group">
+                            <span class="mobile-menu-title">Corporate</span>
+                            <a href="../Corporate/About us/About.html">About Us</a>
+                            <a href="../Contact us/Contact.html">Support</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mobile-item">
+                    <a href="../Products/products.html">Products</a>
+                </li>
+
+                <li class="mobile-item">
+                    <a href="../Contact us/Contact.html">Contact Us</a>
+                </li>
+
+                <li class="mobile-item mobile-dealer-item">
+                    <a href="../dealer/dealer.html">Become a Dealer</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+<main class="heating-page">
+
+    <!-- =================================================
+         HERO
+    ================================================== -->
+    <section class="heating-hero">
+        <div class="heating-hero-texture" aria-hidden="true"></div>
+
+        <div class="heating-shell heating-hero-inner">
+
+            <div class="heating-hero-copy">
+
+                <nav class="heating-breadcrumb" aria-label="Breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <span>/</span>
+                    <a href="../Products/products.html">Products</a>
+                    <span>/</span>
+                    <span aria-current="page">Heating</span>
+                </nav>
+
+                <span class="heating-eyebrow">
+                    ARTHKIRAN HEATING COLLECTION
+                </span>
+
+                <h1>
+                    Comfort for<br>
+                    <em>cooler days.</em>
+                </h1>
+
+                <p>
+                    Explore Arthkiran's heating range and contact our team
+                    for product information, availability and enquiries.
+                </p>
+
+                <div class="heating-hero-actions">
+                    <a class="heating-btn heating-btn-gold"
+                       href="#heating-range">
+                        Explore the range
+                        <span aria-hidden="true">↓</span>
+                    </a>
+
+                    <a class="heating-btn heating-btn-outline"
+                       href="../Contact us/Contact.html">
+                        Make an enquiry
+                        <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+
+                <div class="heating-hero-note">
+                    <span class="heating-note-line"></span>
+                    <span>GLOW WITH GROWTH</span>
+                </div>
+
+            </div>
+
+            <div class="heating-hero-visual"
+                 aria-label="Arthkiran heating products">
+
+                <div class="heating-visual-orbit heating-orbit-one"></div>
+                <div class="heating-visual-orbit heating-orbit-two"></div>
+                <div class="heating-visual-glow"></div>
+
+                <img src="../Images/Heater.png"
+                     alt="Arthkiran room heater"
+                     id="heatingHeroImage">
+
+                <div class="heating-visual-caption">
+                    <span>THE HEATING COLLECTION</span>
+                    <span class="heating-caption-rule"></span>
+                    <span>01</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="heating-hero-footer">
+            <span>EVERYDAY COMFORT</span>
+            <span class="heating-footer-separator"></span>
+            <span>HEATING SOLUTIONS</span>
+            <span class="heating-footer-separator"></span>
+            <span>ARTHKIRAN ELECTRICAL PRODUCTS</span>
+        </div>
+    </section>
+
+
+    <!-- =================================================
+         INTRODUCTION
+    ================================================== -->
+    <section class="heating-intro">
+        <div class="heating-shell heating-intro-grid">
+
+            <div>
+                <span class="heating-section-kicker">THE COLLECTION</span>
+
+                <h2>
+                    Warmth for<br>
+                    <em>everyday living.</em>
+                </h2>
+            </div>
+
+            <p>
+                Discover our heating category and get in touch with
+                Arthkiran for information about available models,
+                specifications and business enquiries.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- =================================================
+         HEATING RANGE
+    ================================================== -->
+    <section class="heating-range" id="heating-range">
+
+        <div class="heating-shell">
+
+            <div class="heating-range-heading">
+                <div>
+                    <span class="heating-section-kicker">
+                        EXPLORE BY CATEGORY
+                    </span>
+
+                    <h2>Our heating range</h2>
+                </div>
+
+                <p>
+                    Browse the available category and contact us for details.
+                </p>
+            </div>
+
+            <div class="heating-controls">
+
+                <div class="heating-filters"
+                     role="group"
+                     aria-label="Filter heating products">
+
+                    <button type="button"
+                            class="heating-filter active"
+                            data-filter="all"
+                            aria-pressed="true">
+                        All products
+                    </button>
+
+                    <button type="button"
+                            class="heating-filter"
+                            data-filter="room"
+                            aria-pressed="false">
+                        Room heating
+                    </button>
+
+                </div>
+
+                <label class="heating-search">
+                    <span class="visually-hidden">Search heating products</span>
+                    <input type="search"
+                           id="heatingSearch"
+                           placeholder="Search heating products..."
+                           autocomplete="off">
+                    <span aria-hidden="true">⌕</span>
+                </label>
+
+            </div>
+
+            <div class="heating-grid" id="heatingGrid">
+
+                <article class="heating-card"
+                         data-category="room"
+                         data-search="room heater heating home indoor winter">
+
+                    <a class="heating-card-image"
+                       href="../Contact us/Contact.html"
+                       aria-label="Enquire about room heaters">
+
+                        <span class="heating-card-number">01</span>
+
+                        <img src="../Images/Heater.png"
+                             alt="Arthkiran room heater"
+                             loading="lazy">
+
+                        <span class="heating-card-open"
+                              aria-hidden="true">↗</span>
+                    </a>
+
+                    <div class="heating-card-content">
+
+                        <span class="heating-card-label">
+                            EVERYDAY COMFORT
+                        </span>
+
+                        <h3>Room Heaters</h3>
+
+                        <p>
+                            Explore heating solutions for cooler days.
+                            Contact our team for product information
+                            and current availability.
+                        </p>
+
+                        <a class="heating-card-link"
+                           href="../Contact us/Contact.html">
+                            Enquire about this range
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="heating-no-results"
+               id="heatingNoResults"
+               hidden>
+                No heating products match your search. Try another term.
+            </p>
+
+            <p class="heating-disclaimer">
+                Please contact Arthkiran for current product specifications,
+                model details and availability.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- =================================================
+         CONTACT CTA
+    ================================================== -->
+     <section class="heating-cta">
+        <div class="heating-shell heating-cta-inner">
+<div class="heating-cta-mark heating-cta-logo">
+    <img src="../Images/Logo.svg" alt="Arthkiran Electrical Products logo">
+</div>            <div class="heating-cta-copy">
+                <span class="heating-section-kicker">LET'S CONNECT</span>
+                <h2>Looking for the right heating solution?</h2>
+                <p>Contact our team for product information, enquiries and business opportunities.</p>
+            </div>
+            <div class="heating-cta-actions">
+                <a class="heating-btn lighting-btn-gold" href="../Contact us/Contact.html">Contact Us <span aria-hidden="true">↗</span></a>
+                <a class="heating-cta-text-link" href="../dealer/dealer.html">Become a dealer <span aria-hidden="true">→</span></a>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<!-- =====================================================
+     SHARED WEBSITE FOOTER
+===================================================== -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-col footer-company">
+
+            <a href="../index.html" class="footer-brand">
+                <div class="footer-logo-box">
+                    <img src="../Images/Logo.svg"
+                         class="logo-img"
+                         alt="Arthkiran logo">
+                </div>
+
+                <span>ARTHKIRAN ELECTRICAL PRODUCTS</span>
+            </a>
+
+            <p class="footer-tagline">Glow with Growth</p>
+
+        </div>
+
+        <div class="footer-col">
+            <h3>Registered Office</h3>
+
+            <p>ARTHKIRAN ELECTRICAL PRODUCTS</p>
+
+            <p>
+                Shop no.2, Tigaon road, near Sai Dham Mandir,
+            </p>
+
+            <p>
+                Sector-86, Faridabad, Haryana, India
+            </p>
+        </div>
+
+        <div class="footer-col footer-contact">
+            <h3>Get in Touch</h3>
+
+            <a href="../Contact us/Contact.html">Send Enquiry</a>
+            <a href="../Contact us/Contact.html">Call us</a>
+        </div>
+
+        <div class="footer-col footer-links">
+            <h3>Quick Links</h3>
+
+            <a href="../index.html">Home</a>
+            <a href="../Corporate/About us/About.html">About Us</a>
+            <a href="../Products/products.html">Products</a>
+            <a href="../Lighting/lighting.html">Lighting</a>
+            <a href="../fans.html">Fans</a>
+            <a href="heaters.html">Heating</a>
+            <a href="../Contact us/Contact.html">Contact Us</a>
+            <a href="../dealer/dealer.html">Become a Dealer</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <div class="footer-nav">
+            <a href="../index.html">Home</a>
+            <span>|</span>
+
+            <a href="../Corporate/About us/About.html">About Us</a>
+            <span>|</span>
+
+            <a href="../Products/products.html">Products</a>
+            <span>|</span>
+
+            <a href="../Lighting/lighting.html">Lighting</a>
+            <span>|</span>
+
+            <a href="heaters.html">Heating</a>
+            <span>|</span>
+
+            <a href="../Contact us/Contact.html">Contact Us</a>
+        </div>
+
+        <div class="footer-copyright">
+            © <span id="currentYear"></span>
+            Arthkiran Electrical Products.
+            All rights reserved.
+        </div>
+
+    </div>
+</footer>
+
+
+<!-- Shared navigation and footer behaviour -->
+<script src="../script.js"></script>
+
+<!-- Heating page interactions -->
+<script src="heating.js"></script>
+
+</body>
+</html>
