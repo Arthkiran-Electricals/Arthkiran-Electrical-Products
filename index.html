@@ -8,7 +8,7 @@
 
     <meta
         name="description"
-        content="Arthkiran Electrical Products - Quality lighting, fan and heating solutions. Glow with Growth."
+        content="Arthkiran Electrical Products - Quality fans and ventilation solutions. Glow with Growth."
     >
 
     <meta name="theme-color" content="#4b1010">
@@ -25,39 +25,6 @@
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Keep all three product cards in one row on desktop/tablet -->
-    <style>
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 28px;
-            align-items: stretch;
-        }
-
-        .product-card {
-            min-width: 0;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        @media (max-width: 900px) and (min-width: 701px) {
-            .product-grid {
-                grid-template-columns: repeat(3, minmax(0, 1fr));
-                gap: 18px;
-            }
-
-            .product-card-content {
-                padding: 20px 16px;
-            }
-        }
-
-        @media (max-width: 700px) {
-            .product-grid {
-                grid-template-columns: 1fr;
-                gap: 22px;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -110,35 +77,6 @@
 
                         <div class="dropdown-content">
 
-                            <!-- Lighting -->
-                          <!--<div class="menu-column">
-                                <h3>Lighting</h3>
-
-                                <a href="Lighting/Led-bulb/Led.html">
-                                    LED Bulb
-                                </a>
-
-                                <a href="Lighting/Down-Light/Down.html">
-                                    Downlight
-                                </a>
-
-                                <a href="Lighting/Panel-Light/Panel.html">
-                                    Panel Lights
-                                </a>
-
-                                <a href="Lighting/Led-Batten/LedB.html">
-                                    LED Batten
-                                </a>
-
-                                <a href="Lighting/Outdoor-Lights/OL.html">
-                                    Outdoor Lights
-                                </a>
-
-                                <a href="Lighting/Rope/ROL.html">
-                                    Rope &amp; Other Lights
-                                </a>
-                            </div>--->
-
                             <!-- Fans -->
                             <div class="menu-column">
                                 <h3>Fans</h3>
@@ -150,15 +88,6 @@
                                 <a href="Fans/Exhaust Fans/Exhaust.html">Exhaust Fans</a>
                                 <a href="Fans/Axial Fans/Axial.html">Axial Flow Fans</a>
                             </div>
-
-                            <!-- Heating -->
-                            <!--<div class="menu-column">
-                                <h3>Heating</h3>
-
-                                <a href="Heaters/heaters.html">
-                                    Room Heaters
-                                </a>
-                            </div>-->
 
                         </div>
                     </li>
@@ -314,16 +243,7 @@
                                 <a href="Fans/Farrata Fans/Farrata.html">Farrata Fans</a>
                                 <a href="Fans/Exhaust Fans/Exhaust.html">Exhaust Fans</a>
                                 <a href="Fans/Axial Fans/Axial.html">Axial Flow Fans</a>
-                            <!-- Heating -->
-                            <!--<div class="mobile-menu-group">
-                                <span class="mobile-menu-title">
-                                    Heating
-                                </span>
-
-                                <a href="Heaters/heaters.html">
-                                    Room Heaters
-                                </a>
-                            </div>-->
+                            </div>
 
                         </div>
                     </li>
@@ -393,436 +313,268 @@
     <!-- MAIN CONTENT -->
     <main>
 
-        <!-- HERO SECTION -->
+        <!-- HERO BANNER -->
         <section class="hero-modern" id="home">
-
             <div class="hero-overlay"></div>
 
             <div class="hero-inner">
+                <div class="hero-brand">
+                    <img src="Images/Logo.svg" alt="Arthkiran Electrical Products logo">
+                </div>
 
-                <span class="hero-eyebrow">
-                    ARTHKIRAN ELECTRICAL PRODUCTS
-                </span>
-
+                <span class="hero-eyebrow">ARTHKIRAN ELECTRICAL PRODUCTS</span>
                 <h1>Glow with Growth</h1>
-
                 <p class="hero-description">
                     Quality electrical products designed for dependable
                     performance, safety and everyday living.
                 </p>
 
                 <div class="hero-actions">
-                    <a
-                        href="Products/products.html"
-                        class="btn-main"
-                    >
-                        View Products
-                    </a>
-
-                    <a
-                        href="Corporate/Contact us/Contact.html"
-                        class="btn-secondary"
-                    >
-                        Contact Us
-                    </a>
+                    <a href="#products" class="btn-main">View Products</a>
+                    <a href="Corporate/Contact us/Contact.html" class="btn-secondary">Contact Us</a>
                 </div>
-
             </div>
 
             <div class="hero-scroll-indicator">
                 <span>Explore</span>
                 <span class="scroll-line"></span>
             </div>
-
         </section>
 
-        <!-- HIGHLIGHTS -->
-        <section class="highlights-section">
-
+        <!-- WHY CHOOSE US: BENEFITS LEFT, ONE IMAGE RIGHT -->
+        <section class="why-choose-section" id="why-choose-us">
             <div class="section-container">
-
-                <div class="highlights-intro">
-                    <span class="section-kicker">WHY ARTHKIRAN</span>
-
-                    <h2>
-                        Built around quality,
-                        reliability and trust.
-                    </h2>
-                </div>
-
-                <div class="highlights">
-
-                    <div class="highlight-box">
-                        <div class="highlight-number">01</div>
-
-                        <div class="highlight-content">
-                            <h3>Emerging Excellence</h3>
-
-                            <p>
-                                Providing quality and trusted electrical products.
-                            </p>
-                        </div>
+                <div class="why-choose-layout">
+                    <div class="why-choose-content">
+                        <span class="section-kicker">THE ARTHKIRAN ADVANTAGE</span>
+                        <h2>Why Choose Us?</h2>
+                        <ul class="why-choose-list">
+                            <li><span class="why-bullet">01</span><span>Wide range of electrical products</span></li>
+                            <li><span class="why-bullet">02</span><span>100% genuine &amp; certified products</span></li>
+                            <li><span class="why-bullet">03</span><span>Best quality at best price</span></li>
+                            <li><span class="why-bullet">04</span><span>Expert support &amp; guidance</span></li>
+                            <li><span class="why-bullet">05</span><span>Timely delivery, every time</span></li>
+                        </ul>
                     </div>
 
-                    <div class="highlight-box">
-                        <div class="highlight-number">02</div>
-
-                        <div class="highlight-content">
-                            <h3>Certified Products</h3>
-
-                            <p>
-                                Every item meets strict quality and safety standards.
-                            </p>
-                        </div>
+                    <div class="why-choose-image">
+                        <img src="Images/Fans.jpeg" alt="Arthkiran range of fans" loading="lazy">
                     </div>
-
-                    <div class="highlight-box">
-                        <div class="highlight-number">03</div>
-
-                        <div class="highlight-content">
-                            <h3>Fast Delivery</h3>
-
-                            <p>
-                                Quick order processing and doorstep delivery.
-                            </p>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>
 
-        <!-- BRAND VISUAL / IMAGE SHOWCASE -->
-        <section class="visual-showcase">
-
-            <div class="visual-showcase-image">
-                <img
-                    src="Images/Light.png"
-                    alt="Arthkiran lighting products"
-                    loading="lazy"
-                >
-            </div>
-
-            <div class="visual-showcase-content">
-
-                <span class="section-kicker">
-                    LIGHTING, FANS &amp; HEATERS
-                </span>
-
-                <h2>
-                    Designed to illuminate
-                    everyday spaces.
-                </h2>
-
-                <p>
-                    Explore dependable lighting, fan and heating solutions created
-                    for homes, workplaces and everyday environments.
-                </p>
-
-                <a
-                    href="Products/products.html"
-                    class="btn-line"
-                >
-                    Explore Products
-                    <span aria-hidden="true">→</span>
-                </a>
-
-            </div>
-        </section>
-
-        <!-- PRODUCTS / CORE OFFERINGS -->
+        <!-- FAN PRODUCTS -->
         <section class="product-section" id="products">
-
             <div class="section-container">
-
                 <div class="section-heading">
-                    <span class="section-kicker">OUR PRODUCTS</span>
-
-                    <h2>Our Core Offerings</h2>
-
-                    <p>
-                        Practical electrical solutions focused on
-                        performance, efficiency and reliability.
-                    </p>
+                    <span class="section-kicker">OUR COLLECTION</span>
+                    <h2>Explore Our Fans</h2>
+                    <p>Discover our range of ventilation, exhaust and personal fan solutions.</p>
                 </div>
 
-                <!-- Three product cards -->
                 <div class="product-grid">
 
-                    <!-- Fans Card -->
-                    <a
-                        href="Fans/Fans.html"
-                        class="product-card"
-                    >
-                        <div class="product-image-wrapper">
-
-                            <img
-                                src="Images/Fans.png"
-                                alt="BLDC Fans"
-                                loading="lazy"
-                            >
-
-                            <span class="product-arrow">→</span>
+                    <article class="product-card">
+                        <div class="product-gallery single-image">
+                            <img src="Images/AKP.jpeg" alt="Plastic Ventilator Fans" class="active" loading="lazy">
                         </div>
-
                         <div class="product-card-content">
-
-                            <span class="product-category">
-                                FANS
-                            </span>
-
-                            <h3>BLDC Fans</h3>
-
-                            <p>
-                                Energy-efficient Fans made for performance.
-                            </p>
-
-                            <span class="product-link">
-                                Explore Fans →
-                            </span>
+                            <span class="product-category">VENTILATION FANS</span>
+                            <h3>Plastic Ventilator Fans</h3>
+                            <div class="product-sizes">
+                                <span class="size-heading">Available Models &amp; Sizes</span>
+                                <div class="size-list">
+                                    <span>VAYU-AK-P — 150 mm</span>
+                                    <span>VAYU-AK-Q — 200 mm</span>
+                                    <span>VAYU-AK-R — 250 mm</span>
+                                </div>
+                            </div>
+                            <div class="product-card-action">
+                                <a class="product-enquiry" href="https://wa.me/919277199649?text=Hello%20Arthkiran%2C%20I%20am%20interested%20in%20Plastic%20Ventilator%20Fans." target="_blank" rel="noopener">Send Enquiry</a>
+                            </div>
                         </div>
-                    </a>
-<a
-                        href=""
-                        class="product-card"
-                    >
-                        <div class="product-image-wrapper">
+                    </article>
 
-                            <img
-                                src="Images/Coming Soon.avif"
-                                alt="LED Lighting"
-                                loading="lazy"
-                            >
-
-                            <span class="product-arrow">→</span>
+                    <article class="product-card">
+                        <div class="product-gallery" data-slideshow>
+                            <img src="Images/AKA1.png" alt="Plastic Ventilator Grill Fans" class="active" loading="lazy">
+                            <img src="Images/AKA1.png" alt="Plastic Ventilator Grill Fans alternate view" loading="lazy">
                         </div>
-
                         <div class="product-card-content">
-
-                            <span class="product-category">
-                                LIGHTING
-                            </span>
-
-                            <h3>LED Lighting</h3>
-
-                            <p>
-                                All variety of Indoor &amp; Outdoor Lighting.
-                            </p>
-
-                            <span class="product-link">
-                                Explore Lighting →
-                            </span>
+                            <span class="product-category">VENTILATION FANS</span>
+                            <h3>Plastic Ventilator (Grill) Fans</h3>
+                            <div class="product-sizes">
+                                <span class="size-heading">Available Models &amp; Sizes</span>
+                                <div class="size-list">
+                                    <span>VAYU-AK-A — 150 mm</span>
+                                    <span>VAYU-AK-B — 200 mm</span>
+                                    <span>VAYU-AK-C — 250 mm</span>
+                                    <span>VAYU-AK-D — 300 mm</span>
+                                </div>
+                            </div>
+                            <div class="product-card-action">
+                                <a class="product-enquiry" href="https://wa.me/919277199649?text=Hello%20Arthkiran%2C%20I%20am%20interested%20in%20Plastic%20Ventilator%20Grill%20Fans." target="_blank" rel="noopener">Send Enquiry</a>
+                            </div>
                         </div>
-                    </a>
-                    <!-- Heaters Card -->
-                    <a
-                        href=""
-                        class="product-card"
-                    >
-                        <div class="product-image-wrapper heater-image-wrapper">
+                    </article>
 
-                            <img
-                                src="Images/Coming Soon.avif"
-                                alt="Arthkiran room heaters"
-                                loading="lazy"
-                                onerror="this.style.display='none'; this.parentElement.classList.add('heater-image-fallback');"
-                            >
-
-                            <span
-                                class="product-arrow"
-                                aria-hidden="true"
-                            >
-                                →
-                            </span>
+                    <article class="product-card">
+                        <div class="product-gallery" data-slideshow>
+                            <img src="Images/AKE2.jpeg" alt="Personal Fans" class="active" loading="lazy">
+                            <img src="Images/AKE2.jpeg" alt="Personal Fans alternate view" loading="lazy">
                         </div>
-
                         <div class="product-card-content">
-
-                            <span class="product-category">
-                                HEATING
-                            </span>
-
-                            <h3>Heaters</h3>
-
-                            <p>
-                                Comfort-focused heating solutions for cooler days.
-                            </p>
-
-                            <span class="product-link">
-                                Explore Heaters →
-                            </span>
+                            <span class="product-category">PERSONAL FANS</span>
+                            <h3>Personal Fans</h3>
+                            <div class="product-sizes">
+                                <span class="size-heading">Available Models &amp; Sizes</span>
+                                <div class="size-list"><span>VAYU-AK-E — 230 mm</span></div>
+                            </div>
+                            <div class="product-card-action">
+                                <a class="product-enquiry" href="https://wa.me/919277199649?text=Hello%20Arthkiran%2C%20I%20am%20interested%20in%20Personal%20Fans." target="_blank" rel="noopener">Send Enquiry</a>
+                            </div>
                         </div>
-                    </a>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-gallery" data-slideshow>
+                            <img src="Images/AKJ1.png" alt="Axial Flow Type 1 Fans" class="active" loading="lazy">
+                            <img src="Images/AKJ1.png" alt="Axial Flow Type 1 Fans alternate view" loading="lazy">
+                        </div>
+                        <div class="product-card-content">
+                            <span class="product-category">AXIAL FLOW FANS</span>
+                            <h3>Axial Flow (Type 1) Fans</h3>
+                            <div class="product-sizes">
+                                <span class="size-heading">Available Models &amp; Sizes</span>
+                                <div class="size-list">
+                                    <span>VAYU-AK-G — 100 mm</span>
+                                    <span>VAYU-AK-H — 150 mm</span>
+                                    <span>VAYU-AK-I — 200 mm</span>
+                                </div>
+                            </div>
+                            <div class="product-card-action">
+                                <a class="product-enquiry" href="https://wa.me/919277199649?text=Hello%20Arthkiran%2C%20I%20am%20interested%20in%20Axial%20Flow%20Type%201%20Fans." target="_blank" rel="noopener">Send Enquiry</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-gallery" data-slideshow>
+                            <img src="Images/AKJ1.png" alt="Axial Flow Type 2 Fans" class="active" loading="lazy">
+                            <img src="Images/AKJ1.png" alt="Axial Flow Type 2 Fans alternate view" loading="lazy">
+                        </div>
+                        <div class="product-card-content">
+                            <span class="product-category">AXIAL FLOW FANS</span>
+                            <h3>Axial Flow (Type 2) Fans</h3>
+                            <div class="product-sizes">
+                                <span class="size-heading">Available Models &amp; Sizes</span>
+                                <div class="size-list">
+                                    <span>VAYU-AK-J — 100 mm</span>
+                                    <span>VAYU-AK-K — 150 mm</span>
+                                </div>
+                            </div>
+                            <div class="product-card-action">
+                                <a class="product-enquiry" href="https://wa.me/919277199649?text=Hello%20Arthkiran%2C%20I%20am%20interested%20in%20Axial%20Flow%20Type%202%20Fans." target="_blank" rel="noopener">Send Enquiry</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-gallery" data-slideshow>
+                            <img src="Images/AKN.jpeg" alt="LD Exhaust Shaded Pole Fans" class="active" loading="lazy">
+                            <img src="Images/AKN.jpeg" alt="LD Exhaust Shaded Pole Fans alternate view" loading="lazy">
+                        </div>
+                        <div class="product-card-content">
+                            <span class="product-category">EXHAUST FANS</span>
+                            <h3>LD Exhaust (Shaded Pole) Fans</h3>
+                            <div class="product-sizes">
+                                <span class="size-heading">Available Models &amp; Sizes</span>
+                                <div class="size-list">
+                                    <span>VAYU-AK-N — 230 mm</span>
+                                    <span>VAYU-AK-O — 300 mm</span>
+                                </div>
+                            </div>
+                            <div class="product-card-action">
+                                <a class="product-enquiry" href="https://wa.me/919277199649?text=Hello%20Arthkiran%2C%20I%20am%20interested%20in%20LD%20Exhaust%20Shaded%20Pole%20Fans." target="_blank" rel="noopener">Send Enquiry</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-gallery" data-slideshow>
+                            <img src="Images/AKF.jpeg" alt="Cabin Fans" class="active" loading="lazy">
+                            <img src="Images/AKF.jpeg" alt="Cabin Fans alternate view" loading="lazy">
+                        </div>
+                        <div class="product-card-content">
+                            <span class="product-category">CABIN FANS</span>
+                            <h3>Cabin Fans</h3>
+                            <div class="product-sizes">
+                                <span class="size-heading">Available Models &amp; Sizes</span>
+                                <div class="size-list"><span>VAYU-AK-F — 300 mm</span></div>
+                            </div>
+                            <div class="product-card-action">
+                                <a class="product-enquiry" href="https://wa.me/919277199649?text=Hello%20Arthkiran%2C%20I%20am%20interested%20in%20Cabin%20Fans." target="_blank" rel="noopener">Send Enquiry</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-gallery" data-slideshow>
+                            <img src="Images/AKL.jpg" alt="HD Exhaust Fans" class="active" loading="lazy">
+                            <img src="Images/AKL.jpg" alt="HD Exhaust Fans alternate view" loading="lazy">
+                        </div>
+                        <div class="product-card-content">
+                            <span class="product-category">EXHAUST FANS</span>
+                            <h3>HD Exhaust Fans</h3>
+                            <div class="product-sizes">
+                                <span class="size-heading">Available Models &amp; Sizes</span>
+                                <div class="size-list">
+                                    <span>VAYU-AK-L — 300 mm</span>
+                                    <span>VAYU-AK-M — 230 mm</span>
+                                </div>
+                            </div>
+                            <div class="product-card-action">
+                                <a class="product-enquiry" href="https://wa.me/919277199649?text=Hello%20Arthkiran%2C%20I%20am%20interested%20in%20HD%20Exhaust%20Fans." target="_blank" rel="noopener">Send Enquiry</a>
+                            </div>
+                        </div>
+                    </article>
 
                 </div>
             </div>
         </section>
 
-        <!-- PHOTO / BRAND STORY SECTION -->
-        <section class="brand-story">
-
-            <div class="brand-story-image">
-
-                <img
-                    src="Images/Fans.png"
-                    alt="Arthkiran electrical products"
-                    loading="lazy"
-                >
-
-                <div class="image-caption">
-                    <span>ARTHKIRAN</span>
-                    <strong>Glow with Growth</strong>
-                </div>
-
-            </div>
-
-            <div class="brand-story-content">
-
-                <span class="section-kicker">OUR APPROACH</span>
-
-                <h2>
-                    Electrical products
-                    made with purpose.
-                </h2>
-
-                <p>
-                    We are a trusted electrical company committed to
-                    delivering top-grade electrical products that ensure
-                    safety, performance, and reliability.
-                </p>
-
-                <a
-                    href="Corporate/About us/About.html"
-                    class="btn-line"
-                >
-                    Learn More
-                    <span aria-hidden="true">→</span>
-                </a>
-
-            </div>
-        </section>
-
-        <!-- VIDEO / MEDIA SHOWCASE -->
+        <!-- VIDEO -->
         <section class="media-section">
-
             <div class="section-container">
-
                 <div class="media-heading">
-
-                    <span class="section-kicker">
-                        EXPERIENCE ARTHKIRAN
-                    </span>
-
+                    <span class="section-kicker">EXPERIENCE ARTHKIRAN</span>
                     <h2>Light. Air. Everyday living.</h2>
-
-                    <p>
-                        A dedicated space for product demonstrations,
-                        brand films and visual stories.
-                    </p>
-
+                    <p>A dedicated space for product demonstrations, brand films and visual stories.</p>
                 </div>
 
                 <div class="media-frame">
-
-                    <video
-                        class="brand-video"
-                        controls
-                        muted
-                        playsinline
-                        preload="metadata"
-                        poster="Images/Hero-banner.svg"
-                    >
-                        <source
-                            src="Images/Arthkiran-Brand-Video.mp4"
-                            type="video/mp4"
-                        >
-
+                    <video class="brand-video" controls muted playsinline preload="metadata" poster="Images/Hero-banner.svg">
+                        <source src="Images/Arthkiran-Brand-Video.mp4" type="video/mp4">
                         Your browser does not support the video element.
                     </video>
-
                     <div class="media-overlay">
-                        <span class="media-label">
-                            ARTHKIRAN ELECTRICAL PRODUCTS
-                        </span>
+                        <span class="media-label">ARTHKIRAN ELECTRICAL PRODUCTS</span>
                     </div>
-
                 </div>
             </div>
         </section>
 
-        <!-- ABOUT US -->
-        <section class="about-split">
-
-            <div class="about-text">
-
-                <span class="section-kicker">ABOUT ARTHKIRAN</span>
-
-                <h2>Who We Are</h2>
-
-                <p>
-                    We are a trusted electrical company committed to
-                    delivering top-grade electrical products that ensure
-                    safety, performance, and reliability.
-                </p>
-
-                <a
-                    href="Corporate/About us/About.html"
-                    class="btn-line"
-                >
-                    Learn More
-                    <span aria-hidden="true">→</span>
-                </a>
-
-            </div>
-
-            <div
-                class="about-photo"
-                role="img"
-                aria-label="About Arthkiran"
-            >
-                <img
-                    src="Images/Light.png"
-                    alt="Arthkiran products"
-                    loading="lazy"
-                >
-            </div>
-
-        </section>
-
-        <!-- BUSINESS CTA -->
-        <section class="cta2">
-
+        <!-- CONTACT US BANNER -->
+        <section class="cta2 contact-banner">
             <div class="cta-decoration"></div>
-
             <div class="cta-content">
-
-                <span class="section-kicker">
-                    LET'S WORK TOGETHER
-                </span>
-
-                <h2>Looking for Business?</h2>
-
-                <p>
-                    Get in touch with us for quotations, product info,
-                    or dealership inquiries.
-                </p>
-
+                <span class="section-kicker">WE ARE HERE TO HELP</span>
+                <h2>Let's Connect</h2>
+                <p>Have a product enquiry or need assistance? Get in touch with our team. We will be happy to help.</p>
                 <div class="cta-actions">
-
-                    <a
-                        href="Corporate/Contact us/Contact.html"
-                        class="btn-main"
-                    >
-                        Contact Us
-                    </a>
-
-                    <a
-                        href="dealer/dealer.html"
-                        class="btn-secondary"
-                    >
-                        Become a Dealer
-                    </a>
-
+                    <a href="Corporate/Contact us/Contact.html" class="btn-main">Contact Us</a>
+                    <a href="https://wa.me/919277199649" class="btn-secondary" target="_blank" rel="noopener">WhatsApp Us</a>
                 </div>
             </div>
         </section>
@@ -940,6 +692,23 @@
 
     <!-- JavaScript -->
     <script src="script.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".product-gallery[data-slideshow]").forEach(function (gallery) {
+            const images = Array.from(gallery.querySelectorAll("img"));
+            if (images.length < 2) return;
+            let index = 0;
+            images.forEach((image, i) => image.classList.toggle("active", i === 0));
+            window.setInterval(function () {
+                images[index].classList.remove("active");
+                index = (index + 1) % images.length;
+                images[index].classList.add("active");
+            }, 7000);
+        });
+        const year = document.getElementById("currentYear");
+        if (year) year.textContent = new Date().getFullYear();
+    });
+    </script>
 
 </body>
 </html>
