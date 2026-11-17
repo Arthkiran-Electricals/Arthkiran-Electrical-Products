@@ -321,4 +321,36 @@
             currentYear.textContent = new Date().getFullYear();
         }
     });
-})();
+})();/* =========================================================
+   PRODUCT IMAGE SLIDESHOW
+========================================================= */
+
+const productGalleries = document.querySelectorAll(
+    ".product-gallery[data-slideshow]"
+);
+
+productGalleries.forEach(function (gallery) {
+
+    const images = gallery.querySelectorAll("img");
+
+    if (images.length <= 1) {
+        return;
+    }
+
+    let currentImage = 0;
+
+    images.forEach(function (image, index) {
+        image.classList.toggle("active", index === 0);
+    });
+
+    window.setInterval(function () {
+
+        images[currentImage].classList.remove("active");
+
+        currentImage = (currentImage + 1) % images.length;
+
+        images[currentImage].classList.add("active");
+
+    }, 3000);
+
+});
