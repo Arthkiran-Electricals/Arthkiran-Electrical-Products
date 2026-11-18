@@ -3422,3 +3422,42 @@ button:focus-visible {
         text-align: left;
     }
 }
+/* =====================================================
+   WHY CHOOSE US — SHOW COMPLETE IMAGE
+===================================================== */
+
+.why-choose-image {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.why-choose-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    aspect-ratio: auto;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 16px;
+}
+
+/* Tablet and mobile */
+@media (max-width: 700px) {
+    .why-choose-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .why-choose-image img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        object-fit: contain;
+    }
+}
